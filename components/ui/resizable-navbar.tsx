@@ -12,6 +12,8 @@ import {
   useScroll,
   useMotionValueEvent,
 } from "motion/react";
+import Image from "next/image";
+import Link from "next/link";
 
 import React, { useRef, useState } from "react";
 
@@ -54,7 +56,7 @@ interface MobileNavMenuProps {
   children: React.ReactNode;
   className?: string;
   isOpen: boolean;
-  onClose: () => void;
+  onClose?: () => void;
 }
 
 export const Navbar = ({ children, className }: NavbarProps) => {
@@ -230,7 +232,6 @@ export const MobileNavMenu = ({
   children,
   className,
   isOpen,
-  onClose,
 }: MobileNavMenuProps) => {
   return (
     <AnimatePresence>
@@ -267,12 +268,12 @@ export const MobileNavToggle = ({
 
 export const NavbarLogo = () => {
   return (
-    <a
+    <Link
       href="/"
       className="relative z-20 mr-4 flex items-center space-x-2 px-2 py-1 text-sm font-normal text-black"
     >
-      <img src="/images/logo.png" alt="logo" width={100} height={100} />
-    </a>
+      <Image src="/images/logo.png" alt="logo" width={100} height={100} />
+    </Link>
   );
 };
 

@@ -1,8 +1,9 @@
 "use client";
 
 import { motion } from "framer-motion";
+import Image from "next/image";
 import Link from "next/link";
-import { useMemo } from "react";
+import { useEffect, useState } from "react";
 
 export default function Contact() {
   const images = [
@@ -13,10 +14,13 @@ export default function Contact() {
     "https://images.unsplash.com/photo-1546484475-7f7bd55792da?q=80&w=2581&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
   ];
 
-  const rotations = useMemo(
-    () => images.map(() => Math.random() * 20 - 10),
-    [images]
-  );
+  const [rotations, setRotations] = useState<number[]>([]);
+
+  useEffect(() => {
+    // Only runs on the client
+    const randomAngles = images.map(() => Math.random() * 20 - 10);
+    setRotations(randomAngles);
+  }, []);
 
   return (
     <section className="w-full px-4 py-0 sm:py-20 lg:px-4 flex flex-col md:flex-row justify-between items-center">
@@ -41,7 +45,9 @@ export default function Contact() {
                   whileTap={{ scale: 1.1, rotate: 0, zIndex: 100 }}
                   className="rounded-xl -mr-4 p-1 bg-white dark:bg-neutral-800 dark:border-neutral-700 border border-neutral-100 shrink-0 overflow-hidden"
                 >
-                  <img
+                  <Image
+                    width={15}
+                    height={15}
                     src={image}
                     alt="hosting showcase"
                     className="rounded-lg h-10 w-10 md:h-15 md:w-15 object-cover shrink-0"

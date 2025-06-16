@@ -1,6 +1,5 @@
-import Link from "next/link";
-import { Mail, MapPin, XIcon, LinkedinIcon } from "lucide-react";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Footer() {
   const currentYear = new Date().getFullYear();
@@ -14,7 +13,7 @@ export default function Footer() {
               className="font-normal flex space-x-2 items-center text-sm mr-4  text-black px-2 py-1  relative z-20"
               href="/"
             >
-              <img
+              <Image
                 alt="logo"
                 loading="lazy"
                 width="30"

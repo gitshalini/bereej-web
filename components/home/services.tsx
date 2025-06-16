@@ -1,9 +1,12 @@
 import { BentoCard, BentoGrid } from "@/components/magicui/bento-grid";
+import Image from "next/image";
 
 const features = [
   {
     Icon: (
-      <img
+      <Image
+        width={"12"}
+        height="12"
         src="/images/maintenance.svg"
         alt="Maintenance Icon"
         className="w-12 h-12"
@@ -16,7 +19,9 @@ const features = [
     cta: "Learn more",
     className: "col-span-3 lg:col-span-1",
     background: (
-      <img
+      <Image
+        width={100}
+        height={100}
         src="/images/web-maintenance.png"
         alt="web-maintenance"
         className="absolute right-2 top-0 h-[300px] w-full scale-75 border-none transition-all duration-300 ease-out [mask-image:linear-gradient(to_top,transparent_10%,#000_100%)] group-hover:scale-90"
@@ -25,7 +30,13 @@ const features = [
   },
   {
     Icon: (
-      <img src="/images/cloud-cog.svg" alt="Cloud Icon" className="w-12 h-12" />
+      <Image
+        width={12}
+        height={12}
+        src="/images/cloud-cog.svg"
+        alt="Cloud Icon"
+        className="w-12 h-12"
+      />
     ),
     name: "Cloud Services and Migration",
     description:
@@ -34,7 +45,9 @@ const features = [
     cta: "Learn more",
     className: "col-span-3 lg:col-span-2",
     background: (
-      <img
+      <Image
+        width={100}
+        height={400}
         src="/images/cloud-migration-services.png"
         alt="app-development"
         className="absolute right-2 top-0 h-[400px] w-full scale-75 border-none transition-all duration-300 ease-out [mask-image:linear-gradient(to_top,transparent_10%,#000_100%)] group-hover:scale-90"
@@ -43,7 +56,9 @@ const features = [
   },
   {
     Icon: (
-      <img
+      <Image
+        width={12}
+        height={12}
         src="/images/monitor-smartphone.svg"
         alt="Mobile App Icon"
         className="w-12 h-12"
@@ -56,7 +71,9 @@ const features = [
     cta: "Learn more",
     className: "col-span-3 lg:col-span-2",
     background: (
-      <img
+      <Image
+        width={100}
+        height={400}
         src="/images/mobile-application-development.png"
         alt="app-development"
         className="absolute right-2 top-0 h-[400px] w-fit scale-75 border-none transition-all duration-300 ease-out [mask-image:linear-gradient(to_top,transparent_10%,#000_100%)] group-hover:scale-90"
@@ -65,7 +82,9 @@ const features = [
   },
   {
     Icon: (
-      <img
+      <Image
+        width={12}
+        height={12}
         src="/images/globe-lock.svg"
         alt="security Icon"
         className="w-12 h-12"
@@ -78,7 +97,9 @@ const features = [
     href: "/services/Account-Security",
     cta: "Learn more",
     background: (
-      <img
+      <Image
+        width={100}
+        height={300}
         src="/images/Account-Security.png"
         alt="Security"
         className="absolute right-2 top-0 h-[300px] w-full scale-75 border-none transition-all duration-300 ease-out [mask-image:linear-gradient(to_top,transparent_10%,#000_100%)] group-hover:scale-90"

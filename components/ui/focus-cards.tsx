@@ -2,6 +2,15 @@
 
 import React, { useState } from "react";
 import { cn } from "@/lib/utils";
+import Image from "next/image";
+
+type Card = {
+  id: string;
+  title: string;
+  description: string;
+  image: string;
+  category?: string;
+};
 
 export const Card = React.memo(
   ({
@@ -10,7 +19,7 @@ export const Card = React.memo(
     hovered,
     setHovered,
   }: {
-    card: any;
+    card: Card;
     index: number;
     hovered: number | null;
     setHovered: React.Dispatch<React.SetStateAction<number | null>>;
@@ -23,10 +32,12 @@ export const Card = React.memo(
         hovered !== null && hovered !== index && "blur-sm scale-[0.98]"
       )}
     >
-      <img
+      <Image
         src={card.image}
         alt={card.title}
-        className="object-cover absolute inset-0  h-60 md:h-96 w-full"
+        width={100}
+        height={100}
+        className="object-cover absolute inset-0 h-60 md:h-96 w-full"
       />
       <div
         className={cn(
@@ -55,13 +66,6 @@ export const Card = React.memo(
 );
 
 Card.displayName = "Card";
-
-type Card = {
-  id: string;
-  title: string;
-  description: string;
-  image: string;
-};
 
 export function FocusCards({ cards }: { cards: Card[] }) {
   const [hovered, setHovered] = useState<number | null>(null);
