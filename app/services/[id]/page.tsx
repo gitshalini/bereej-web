@@ -40,7 +40,7 @@ export default async function ServicePage({ params }: ServicePageProps) {
   }
 
   return (
-    <div className="flex flex-col w-full">
+    <div className="mx-auto w-full flex flex-col max-w-6xl bg-white px-4 pt-20 md:px-8 md:pt-40">
       <PagesHero title={service.title} description={service.description} />
       <section className="py-24 px-4 max-w-5xl mx-auto">
         <div className="mb-12 space-y-4">

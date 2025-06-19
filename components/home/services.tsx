@@ -4,7 +4,7 @@ import { services } from "@/app/services/services";
 export default function Services() {
   return (
     <section className="w-full px-4 py-0 sm:py-20 lg:px-4">
-      <div className="w-full flex flex-col items-center justify-center text-center px-4 mb-20">
+      <div className="w-full flex flex-col items-center justify-center text-center px-4">
         <h2 className="text-xl md:text-4xl font-bold tracking-tight text-neutral-800">
           How we help you
         </h2>
