@@ -113,8 +113,8 @@ export const NavBody = ({ children, className, visible }: NavBodyProps) => {
         minWidth: "800px",
       }}
       className={cn(
-        "relative z-[60] mx-auto hidden w-full max-w-7xl flex-row items-center justify-between self-start rounded-full bg-transparent px-4 py-2 lg:flex dark:bg-transparent",
-        visible && "bg-transparent dark:bg-neutral-950/80",
+        "relative z-[60] mx-auto hidden w-full max-w-7xl flex-row items-center justify-between self-start rounded-full bg-transparent px-4 py-2 lg:flex",
+        visible && "bg-transparent",
         className
       )}
     >
@@ -144,15 +144,15 @@ export const NavItems = ({ items, className, onItemClick }: NavItemsProps) => {
             href={item.link}
             onClick={onItemClick}
             className={cn(
-              "relative px-4 py-2 transition-colors duration-200 dark:text-neutral-300",
-              hovered === idx ? "text-black dark:text-white" : "text-black"
+              "relative px-4 py-2 transition-colors duration-200",
+              hovered === idx ? "text-black" : "text-black"
             )}
           >
             {/* Hover background */}
             {hovered === idx && (
               <motion.div
                 layoutId="hovered"
-                className="absolute inset-0 h-full w-full rounded-full bg-gray-100 dark:bg-neutral-800 z-10"
+                className="absolute inset-0 h-full w-full rounded-full bg-gray-100 z-10"
               />
             )}
             <span className="relative z-20">{item.name}</span>
@@ -160,14 +160,14 @@ export const NavItems = ({ items, className, onItemClick }: NavItemsProps) => {
 
           {/* Submenu */}
           {item.children && hovered === idx && (
-            <div className="absolute left-0 top-full mt-2 min-w-[10rem] rounded-md bg-white shadow-md dark:bg-neutral-800 z-50">
+            <div className="absolute left-0 top-full mt-2 min-w-[10rem] rounded-md bg-white shadow-md z-50">
               <ul className="py-2">
                 {item.children.map((child, subIdx) => (
                   <li key={`submenu-${subIdx}`}>
                     <a
                       href={child.link}
                       onClick={onItemClick}
-                      className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:text-neutral-200 dark:hover:bg-neutral-700"
+                      className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
                     >
                       {child.name}
                     </a>
@@ -203,7 +203,7 @@ export const MobileNav = ({ children, className, visible }: MobileNavProps) => {
       }}
       className={cn(
         "relative z-50 mx-auto flex w-full max-w-[calc(100vw-2rem)] flex-col items-center justify-between bg-transparent px-0 py-2 lg:hidden",
-        visible && "bg-transparent dark:bg-neutral-950/80",
+        visible && "bg-transparent",
         className
       )}
     >
@@ -241,7 +241,7 @@ export const MobileNavMenu = ({
           animate={{ opacity: 1 }}
           exit={{ opacity: 0 }}
           className={cn(
-            "absolute inset-x-0 top-16 z-50 flex w-full flex-col items-start justify-start gap-4 rounded-lg bg-white px-4 py-8 shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset] dark:bg-neutral-950",
+            "absolute inset-x-0 top-16 z-50 flex w-full flex-col items-start justify-start gap-4 rounded-lg bg-white px-4 py-8 shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]",
             className
           )}
         >
@@ -260,9 +260,9 @@ export const MobileNavToggle = ({
   onClick: () => void;
 }) => {
   return isOpen ? (
-    <IconX className="text-black dark:text-white" onClick={onClick} />
+    <IconX className="text-black" onClick={onClick} />
   ) : (
-    <IconMenu2 className="text-black dark:text-white" onClick={onClick} />
+    <IconMenu2 className="text-black" onClick={onClick} />
   );
 };
 
@@ -289,7 +289,7 @@ export const NavbarButton = ({
   as?: React.ElementType;
   children: React.ReactNode;
   className?: string;
-  variant?: "primary" | "secondary" | "dark" | "gradient";
+  variant?: "primary" | "secondary" | "gradient";
 } & (
   | React.ComponentPropsWithoutRef<"a">
   | React.ComponentPropsWithoutRef<"button">
@@ -300,8 +300,8 @@ export const NavbarButton = ({
   const variantStyles = {
     primary:
       "shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]",
-    secondary: "bg-transparent shadow-none dark:text-white",
-    dark: "bg-black text-white shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]",
+    secondary: "bg-transparent shadow-none",
+    // dark: "bg-black text-white shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]",
     gradient:
       "bg-gradient-to-b from-blue-500 to-blue-700 text-white shadow-[0px_2px_0px_0px_rgba(255,255,255,0.3)_inset]",
   };
@@ -341,7 +341,7 @@ export const MobileNavItems = ({
       {items.map((item, idx) => (
         <div key={`mobile-nav-${idx}`} className="w-full">
           <div
-            className="flex items-center justify-between w-full py-2 text-base font-medium text-black dark:text-white"
+            className="flex items-center justify-between w-full py-2 text-base font-medium text-black"
             onClick={() => {
               if (item.children) toggleSubmenu(idx);
               else onItemClick?.();
@@ -369,7 +369,7 @@ export const MobileNavItems = ({
                   key={`mobile-sub-${childIdx}`}
                   href={child.link}
                   onClick={onItemClick}
-                  className="py-1 text-sm text-gray-600 dark:text-gray-300 hover:underline"
+                  className="py-1 text-sm text-gray-600 hover:underline"
                 >
                   {child.name}
                 </a>

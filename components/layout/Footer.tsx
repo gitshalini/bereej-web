@@ -5,7 +5,7 @@ export default function Footer() {
   const currentYear = new Date().getFullYear();
 
   return (
-    <footer className="border-t border-neutral-100 dark:border-white/[0.1] px-8 py-20 bg-white dark:bg-neutral-950 w-full relative overflow-hidden">
+    <footer className="border-t border-neutral-100 px-8 py-20 bg-white w-full relative overflow-hidden">
       <div className="max-w-7xl mx-auto text-sm text-neutral-500 flex sm:flex-row flex-col justify-between items-start  md:px-8">
         <div>
           <div className="mr-0 md:mr-4  md:flex mb-4">
@@ -23,9 +23,7 @@ export default function Footer() {
                 style={{ color: "transparent" }}
                 src="/favicon.png"
               />
-              <span className="font-medium text-black dark:text-white">
-                Bereej Technology
-              </span>
+              <span className="font-medium text-black">Bereej Technology</span>
             </Link>
           </div>
           <div className="mt-2 ml-2">
@@ -35,10 +33,10 @@ export default function Footer() {
         </div>
         <div className="grid grid-cols-3 lg:grid-cols-3 gap-10 items-start mt-10 sm:mt-0 md:mt-0">
           <div className="flex justify-center space-y-4 flex-col w-full">
-            <p className="transition-colors hover:text-text-neutral-800 text-neutral-600 dark:text-neutral-300 font-bold">
+            <p className="transition-colors hover:text-text-neutral-800 text-neutral-600 font-bold">
               Pages
             </p>
-            <ul className="transition-colors hover:text-text-neutral-800 text-neutral-600 dark:text-neutral-300 list-none space-y-4">
+            <ul className="transition-colors hover:text-text-neutral-800 text-neutral-600 list-none space-y-4">
               <li className="list-none">
                 <Link
                   className="transition-colors hover:text-text-neutral-800 "
@@ -82,10 +80,10 @@ export default function Footer() {
             </ul>
           </div>
           <div className="flex justify-center space-y-4 flex-col">
-            <p className="transition-colors hover:text-text-neutral-800 text-neutral-600 dark:text-neutral-300 font-bold">
+            <p className="transition-colors hover:text-text-neutral-800 text-neutral-600 font-bold">
               Socials
             </p>
-            <ul className="transition-colors hover:text-text-neutral-800 text-neutral-600 dark:text-neutral-300 list-none space-y-4">
+            <ul className="transition-colors hover:text-text-neutral-800 text-neutral-600 list-none space-y-4">
               <li className="list-none">
                 <Link
                   href="https://x.com/BereejTech"
@@ -105,10 +103,10 @@ export default function Footer() {
             </ul>
           </div>
           <div className="flex justify-center space-y-4 flex-col">
-            <p className="transition-colors hover:text-text-neutral-800 text-neutral-600 dark:text-neutral-300 font-bold">
+            <p className="transition-colors hover:text-text-neutral-800 text-neutral-600 font-bold">
               Company
             </p>
-            <ul className="transition-colors hover:text-text-neutral-800 text-neutral-600 dark:text-neutral-300 list-none space-y-4">
+            <ul className="transition-colors hover:text-text-neutral-800 text-neutral-600 list-none space-y-4">
               <li className="list-none">
                 <Link
                   href="/about-us"
@@ -159,40 +157,9 @@ export default function Footer() {
               </li>
             </ul>
           </div>
-          {/* <div className="flex justify-center space-y-4 flex-col">
-            <p className="transition-colors hover:text-text-neutral-800 text-neutral-600 dark:text-neutral-300 font-bold">
-              Register
-            </p>
-            <ul className="transition-colors hover:text-text-neutral-800 text-neutral-600 dark:text-neutral-300 list-none space-y-4">
-              <li className="list-none">
-                <Link
-                  className="transition-colors hover:text-text-neutral-800 "
-                  href="#"
-                >
-                  Sign Up
-                </Link>
-              </li>
-              <li className="list-none">
-                <Link
-                  className="transition-colors hover:text-text-neutral-800 "
-                  href="#"
-                >
-                  Login
-                </Link>
-              </li>
-              <li className="list-none">
-                <Link
-                  className="transition-colors hover:text-text-neutral-800 "
-                  href="#"
-                >
-                  Book a demo
-                </Link>
-              </li>
-            </ul>
-          </div> */}
         </div>
       </div>
-      <p className="text-center uppercase mt-20 text-5xl md:text-9xl lg:text-[6rem] xl:text-[8rem] font-bold bg-clip-text text-transparent bg-gradient-to-b from-neutral-50 dark:from-neutral-950 to-neutral-200 dark:to-neutral-800 inset-x-0">
+      <p className="text-center uppercase mt-20 text-5xl md:text-9xl lg:text-[6rem] xl:text-[8rem] font-bold bg-clip-text text-transparent bg-gradient-to-b from-neutral-300 inset-x-0">
         Bereej Technology
       </p>
     </footer>

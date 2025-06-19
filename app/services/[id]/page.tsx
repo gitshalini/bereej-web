@@ -1,4 +1,3 @@
-// app/service/[id]/page.tsx
 import { services } from "../services";
 import Image from "next/image";
 import { notFound } from "next/navigation";

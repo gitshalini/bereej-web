@@ -32,7 +32,9 @@ export function generateStaticParams() {
   }));
 }
 
-export default async function CaseStudyPage({ params }: CaseStudyPageProps) {
+export default async function CaseStudyDetailPage({
+  params,
+}: CaseStudyPageProps) {
   const { id } = await params;
   const caseStudy = caseStudies.find((cs) => cs.id === id);
 

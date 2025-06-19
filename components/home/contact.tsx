@@ -25,11 +25,11 @@ export default function Contact() {
   return (
     <section className="w-full px-4 py-0 sm:py-20 lg:px-4 flex flex-col md:flex-row justify-between items-center">
       <div className="flex flex-col">
-        <h2 className="text-black dark:text-white text-xl text-center md:text-left md:text-3xl font-bold mx-auto md:mx-0 max-w-xl ">
+        <h2 className="text-black text-xl text-center md:text-left md:text-3xl font-bold mx-auto md:mx-0 max-w-xl ">
           Host your websites <br />
           with zero friction today.
         </h2>
-        <p className="max-w-md mt-8 text-center md:text-left text-sm md:text-base mx-auto md:mx-0 text-neutral-600 dark:text-neutral-400">
+        <p className="max-w-md mt-8 text-center md:text-left text-sm md:text-base mx-auto md:mx-0 text-neutral-600">
           Experience lightning-fast hosting with unparalleled reliability. Our
           cutting-edge infrastructure ensures your website stays online 24/7,
           with 99.9% uptime guaranteed.
@@ -43,7 +43,7 @@ export default function Contact() {
                   initial={{ rotate: rotations[idx] }}
                   whileHover={{ scale: 1.1, rotate: 0, zIndex: 100 }}
                   whileTap={{ scale: 1.1, rotate: 0, zIndex: 100 }}
-                  className="rounded-xl -mr-4 p-1 bg-white dark:bg-neutral-800 dark:border-neutral-700 border border-neutral-100 shrink-0 overflow-hidden"
+                  className="rounded-xl -mr-4 p-1 bg-whiteborder border-neutral-100 shrink-0 overflow-hidden"
                 >
                   <Image
                     width={15}

@@ -15,7 +15,7 @@ export default function CaseStudiesPreview() {
     <section ref={ref} className="w-full px-4 py-0 sm:py-20 lg:px-4">
       <div className="w-full flex flex-col items-center justify-center text-center px-4 mb-20">
         <motion.h2
-          className="text-xl md:text-4xl font-bold tracking-tight text-neutral-800 dark:text-neutral-100"
+          className="text-xl md:text-4xl font-bold tracking-tight text-neutral-800"
           initial={{ opacity: 0, y: 20 }}
           animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
           transition={{ duration: 0.6 }}
