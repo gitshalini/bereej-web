@@ -116,7 +116,7 @@ export default function Hero() {
 
       {/* Logos Slider */}
       <section className="py-2 bg-white overflow-hidden">
-        <p className="relative z-10 mx-auto max-w-xl py-4 text-center text-sm mt-8 font-normal text-neutral-600">
+        <p className="relative z-10 mx-auto max-w-xl py-8 text-center text-lg mt-24 font-semibold text-neutral-600 uppercase">
           Trusted by famous brands
         </p>
 

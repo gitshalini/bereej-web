@@ -13,7 +13,7 @@ export default function TestimonialPage() {
         title="Testimonials"
         description="Welcome to our Testimonials page, where we let our satisfied clients and customers speak for us."
       />
-      <div className="max-w-7xl mx-auto py-24">
+      <div className="max-w-7xl mx-auto py-16">
         <HoverEffect items={testimonials} />
       </div>
     </div>

@@ -19,7 +19,7 @@ export function PagesHero({
         duration: 0.8,
         ease: "easeInOut",
       }}
-      className="relative flex flex-col gap-4 items-center justify-center px-4"
+      className="relative flex flex-col gap-4 items-center justify-center px-4 py-10 md:py-20"
     >
       <h1
         className="max-w-5xl text-center text-4xl sm:text-6xl font-bold mb-6 text-neutral-800"

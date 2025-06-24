@@ -5,21 +5,23 @@ import { useInView } from "framer-motion";
 import { motion } from "framer-motion";
 import { testimonials } from "@/app/testimonials/testimonial";
 import { InfiniteMovingCards } from "../ui/infinite-moving-cards";
+import { ColourfulText } from "../ui/colourful-text";
 
 export default function Testimonials() {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true, margin: "-100px 0px" });
 
   return (
-    <section ref={ref} className="w-full px-4 py-0 sm:py-20 lg:px-4">
-      <div className="w-full flex flex-col items-center justify-center text-center px-4 mb-20">
+    <section ref={ref} className="w-full px-4 py-0 sm:py-16 lg:px-4">
+      <div className="w-full flex flex-col items-center justify-center text-center px-4 mb-16">
         <motion.h2
           className="pt-4 font-bold text-lg md:text-4xl text-center text-neutral-800"
           initial={{ opacity: 0, y: 20 }}
           animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
           transition={{ duration: 0.6 }}
         >
-          Trusted by more than 1000+ company’s around the world
+          Trusted by more than <ColourfulText text={`1000+ company's `} />
+          around the world
         </motion.h2>
         <motion.p
           className="max-w-2xl mx-auto text-base text-center text-neutral-600 mt-4"

@@ -5,7 +5,7 @@ export default function Footer() {
   const currentYear = new Date().getFullYear();
 
   return (
-    <footer className="border-t border-neutral-100 px-8 py-20 bg-white w-full relative overflow-hidden">
+    <footer className="border-t border-neutral-100 px-8 py-16 bg-white w-full relative overflow-hidden">
       <div className="max-w-7xl mx-auto text-sm text-neutral-500 flex sm:flex-row flex-col justify-between items-start  md:px-8">
         <div>
           <div className="mr-0 md:mr-4  md:flex mb-4">
@@ -109,7 +109,7 @@ export default function Footer() {
             <ul className="transition-colors hover:text-text-neutral-800 text-neutral-600 list-none space-y-4">
               <li className="list-none">
                 <Link
-                  href="/about-us"
+                  href="/about"
                   className="transition-colors hover:text-text-neutral-800"
                 >
                   About Us

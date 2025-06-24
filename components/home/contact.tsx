@@ -23,7 +23,7 @@ export default function Contact() {
   }, []);
 
   return (
-    <section className="w-full px-4 py-0 sm:py-20 lg:px-4 flex flex-col md:flex-row justify-between items-center">
+    <section className="w-full px-4 py-0 sm:py-16 lg:px-4 flex flex-col md:flex-row justify-between items-center">
       <div className="flex flex-col">
         <h2 className="text-black text-xl text-center md:text-left md:text-3xl font-bold mx-auto md:mx-0 max-w-xl ">
           Host your websites <br />
@@ -43,7 +43,7 @@ export default function Contact() {
                   initial={{ rotate: rotations[idx] }}
                   whileHover={{ scale: 1.1, rotate: 0, zIndex: 100 }}
                   whileTap={{ scale: 1.1, rotate: 0, zIndex: 100 }}
-                  className="rounded-xl -mr-4 p-1 bg-whiteborder border-neutral-100 shrink-0 overflow-hidden"
+                  className="rounded-xl -mr-4 p-1 bg-white border border-neutral-100 shrink-0 overflow-hidden"
                 >
                   <Image
                     width={15}
@@ -124,7 +124,7 @@ export default function Contact() {
         </div>
       </div>
 
-      <button className="cursor-pointer flex space-x-2 items-center group text-base px-4 py-2 rounded-lg bg-gradient-to-b from-blue-500 to-blue-700 text-white shadow-[0px_2px_0px_0px_rgba(255,255,255,0.3)_inset]">
+      <button className="cursor-pointer flex space-x-2 items-center group text-base px-4 py-2 rounded-lg bg-gradient-to-b from-black to-neutral-400 text-white shadow-[0px_2px_0px_0px_rgba(255,255,255,0.3)_inset]">
         <Link href="/contact">Get in Touch</Link>
         <svg
           stroke="currentColor"

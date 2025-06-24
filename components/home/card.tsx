@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export default function Card() {
   return (
-    <section className="text-gray-600 body-font overflow-hidden w-full px-4 py-0 sm:py-20 lg:px-4">
+    <section className="text-gray-600 body-font overflow-hidden w-full px-4 py-0 sm:py-16 lg:px-4">
       <div className="mx-auto flex flex-wrap border rounded-lg lg:bg-gradient-to-r from-40% via-sky-100 to-pink-50">
         <div className="lg:w-1/2 w-full p-20 items-center justify-center">
           <h3 className="text-xl md:text-3xl font-semibold mb-4 tracking-tight text-neutral-800 text-center">

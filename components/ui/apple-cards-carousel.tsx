@@ -84,18 +84,20 @@ export const Carousel = ({ items, initialScroll = 0 }: CarouselProps) => {
     >
       <div className="relative w-full pt-40">
         <div className="flex flex-row items-center justify-between px-5">
-          <h2 className="text-4xl text-neutral-800">Latest Case Studies</h2>
+          <h2 className="text-4xl text-neutral-800 font-bold">
+            Latest Case Studies
+          </h2>
 
           <div className="flex gap-2">
             <button
-              className="relative z-40 flex h-10 w-10 items-center justify-center rounded-full bg-gray-100 disabled:opacity-50"
+              className="relative z-40 flex h-10 w-10 items-center justify-center rounded-full bg-white-100 disabled:opacity-50 cursor-pointer"
               onClick={scrollLeft}
               disabled={!canScrollLeft}
             >
               <IconArrowNarrowLeft className="h-6 w-6 text-gray-500" />
             </button>
             <button
-              className="relative z-40 flex h-10 w-10 items-center justify-center rounded-full bg-gray-100 disabled:opacity-50"
+              className="relative z-40 flex h-10 w-10 items-center justify-center rounded-full bg-white-100 disabled:opacity-50 cursor-pointer"
               onClick={scrollRight}
               disabled={!canScrollRight}
             >
@@ -105,7 +107,7 @@ export const Carousel = ({ items, initialScroll = 0 }: CarouselProps) => {
         </div>
 
         <div
-          className="flex w-full overflow-x-scroll overscroll-x-auto scroll-smooth py-10 [scrollbar-width:none] md:py-20"
+          className="flex w-full overflow-x-scroll overscroll-x-auto scroll-smooth py-10 [scrollbar-width:none] md:py-16"
           ref={carouselRef}
           onScroll={checkScrollability}
         >

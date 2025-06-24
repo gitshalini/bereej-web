@@ -27,7 +27,7 @@ export default function Header() {
       name: "Company",
       link: "",
       children: [
-        { name: "About Us", link: "/about-us" },
+        { name: "About Us", link: "/about" },
         { name: "Testimonials", link: "/testimonials" },
         { name: "Our Values", link: "/our-values" },
         { name: "Leadership", link: "/our-team" },
