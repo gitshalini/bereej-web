@@ -36,16 +36,6 @@ export default function Services() {
           <BentoCard key={idx} {...services} index={idx} />
         ))}
       </BentoGrid>
-      {/* <BentoGrid>
-        {services.slice(0, 6).map((card, idx) => (
-          <BentoCard
-            key={card.id}
-            {...card}
-            index={idx} // important for stagger delay
-            className="col-span-1 md:col-span-1"
-          />
-        ))}
-      </BentoGrid> */}
     </section>
   );
 }

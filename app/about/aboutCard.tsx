@@ -19,13 +19,7 @@ const content = [
 
 export default function AboutCards() {
   return (
-    <div className="relative w-full px-4 py-8">
-      {/* Gradient Blur Background */}
-      {/* <div className="absolute inset-0 -z-10 flex justify-center">
-        <div className="h-[90%] w-[90%] scale-90 rounded-full bg-gradient-to-r from-blue-500 to-teal-500 blur-3xl" />
-      </div> */}
-
-      {/* Cards Container */}
+    <div className="relative w-full">
       <div className="mx-auto flex max-w-7xl flex-col gap-6 md:flex-row md:gap-4">
         {content.map((item, idx) => (
           <div
