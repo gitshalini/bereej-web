@@ -1,5 +1,5 @@
 import { PagesHero } from "@/components/layout/pagesHero";
-import AboutCards from "./aboutCard";
+import AboutCards from "@/components/layout/aboutCard";
 import Image from "next/image";
 import VerticalTabs from "@/components/layout/verticalTabs";
 import { services } from "../services/services";
@@ -35,6 +35,57 @@ const teamMembers = [
     bgColor: "bg-blue-600",
   },
 ];
+const content = [
+  {
+    title: "Flexible & Understanding",
+    desc: "We understand that life is full of twists and turns, and sometimes plans need to be adjusted. That's why we take a dynamic and accommodating approach to provide you with tailored solutions.",
+  },
+  {
+    title: "Growth & Development",
+    desc: "We understand that growth takes many forms – from personal development to organizational advancement. Our mission is to be your partner in this transformative journey, providing you with the resources, tools, and guidance you need to thrive.",
+  },
+  {
+    title: "Open & Transparent",
+    desc: "We understand that transparency is not just a buzzword; it's a guiding principle that influences everything we do. From our communication with clients, partners, and team members to our business practices and decision-making, we strive to be forthright and candid.",
+  },
+];
+
+const tabs = [
+  {
+    title: "Experience excellence with our expert team",
+    content: (
+      <p>
+        {`We take pride in our exceptional team of experts who bring a wealth of
+        experience to every project. With years of industry knowledge and a
+        passion for innovation, our team is dedicated to delivering top-notch
+        solutions that exceed your expectations.`}
+      </p>
+    ),
+  },
+  {
+    title: "Customized solutions for your unique needs",
+    content: (
+      <p>
+        {`One size does not fit all, and we understand that your needs are unique.
+        That's why we offer fully customized solutions tailored to your specific
+        requirements. From the initial consultation to the final implementation,
+        we collaborate closely with you to ensure the perfect fit for your
+        goals.`}
+      </p>
+    ),
+  },
+  {
+    title: "Transparent communication and collaboration",
+    content: (
+      <p>
+        {`We take pride in our exceptional team of experts who bring a wealth of
+        experience to every project. With years of industry knowledge and a
+        passion for innovation, our team is dedicated to delivering top-notch
+        solutions that exceed your expectations.`}
+      </p>
+    ),
+  },
+];
 
 export default function AboutPage() {
   return (
@@ -44,12 +95,12 @@ export default function AboutPage() {
           title="About US"
           description="We help online business grow Together."
         ></PagesHero>
-        <AboutCards />
+        <AboutCards content={content} />
         <div className="w-full ">
           <h3 className="text-2xl font-bold mb-6 text-center py-16 px-4">
             Why we are better
           </h3>
-          <VerticalTabs />
+          <VerticalTabs tabs={tabs} />
         </div>
       </div>
       <Image

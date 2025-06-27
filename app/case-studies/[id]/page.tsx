@@ -101,7 +101,7 @@ export default async function CaseStudyDetailPage({
               (item: { title: string; para: string }, i: number) => (
                 <li
                   key={i}
-                  className="flex flex-col justify-end min-h-32 h-auto rounded-2xl border border-gray-800 bg-white px-6 py-6 shadow-xl
+                  className="flex flex-col justify-around min-h-32 h-auto rounded-2xl border border-gray-800 bg-white px-6 py-6 shadow-xl
                   w-full sm:w-[calc(50%-0.5rem)] md:w-[calc(33.333%-0.666rem)]"
                 >
                   <h3 className="text-xl text-neutral-800 font-semibold mb-2">

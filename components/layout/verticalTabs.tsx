@@ -6,44 +6,44 @@ type Tab = {
   content: React.ReactNode;
 };
 
-const tabs: Tab[] = [
-  {
-    title: "Experience excellence with our expert team",
-    content: (
-      <p>
-        {`We take pride in our exceptional team of experts who bring a wealth of
-        experience to every project. With years of industry knowledge and a
-        passion for innovation, our team is dedicated to delivering top-notch
-        solutions that exceed your expectations.`}
-      </p>
-    ),
-  },
-  {
-    title: "Customized solutions for your unique needs",
-    content: (
-      <p>
-        {`One size does not fit all, and we understand that your needs are unique.
-        That's why we offer fully customized solutions tailored to your specific
-        requirements. From the initial consultation to the final implementation,
-        we collaborate closely with you to ensure the perfect fit for your
-        goals.`}
-      </p>
-    ),
-  },
-  {
-    title: "Transparent communication and collaboration",
-    content: (
-      <p>
-        {`We take pride in our exceptional team of experts who bring a wealth of
-        experience to every project. With years of industry knowledge and a
-        passion for innovation, our team is dedicated to delivering top-notch
-        solutions that exceed your expectations.`}
-      </p>
-    ),
-  },
-];
+// const tabs: Tab[] = [
+//   {
+//     title: "Experience excellence with our expert team",
+//     content: (
+//       <p>
+//         {`We take pride in our exceptional team of experts who bring a wealth of
+//         experience to every project. With years of industry knowledge and a
+//         passion for innovation, our team is dedicated to delivering top-notch
+//         solutions that exceed your expectations.`}
+//       </p>
+//     ),
+//   },
+//   {
+//     title: "Customized solutions for your unique needs",
+//     content: (
+//       <p>
+//         {`One size does not fit all, and we understand that your needs are unique.
+//         That's why we offer fully customized solutions tailored to your specific
+//         requirements. From the initial consultation to the final implementation,
+//         we collaborate closely with you to ensure the perfect fit for your
+//         goals.`}
+//       </p>
+//     ),
+//   },
+//   {
+//     title: "Transparent communication and collaboration",
+//     content: (
+//       <p>
+//         {`We take pride in our exceptional team of experts who bring a wealth of
+//         experience to every project. With years of industry knowledge and a
+//         passion for innovation, our team is dedicated to delivering top-notch
+//         solutions that exceed your expectations.`}
+//       </p>
+//     ),
+//   },
+// ];
 
-const VerticalTabs: React.FC = () => {
+export default function VerticalTabs({ tabs }: { tabs: Tab[] }) {
   const [activeIndex, setActiveIndex] = useState(0);
 
   return (
@@ -70,6 +70,4 @@ const VerticalTabs: React.FC = () => {
       </div>
     </div>
   );
-};
-
-export default VerticalTabs;
+}
