@@ -3,6 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { useRef } from "react";
 import { career } from "./career";
+import ContactCard from "@/components/layout/contactCard";
 
 export default function Career() {
   const openingsRef = useRef<HTMLDivElement | null>(null);
@@ -81,6 +82,7 @@ export default function Career() {
           </div>
         </div>
       </section>
+      <ContactCard />
     </section>
   );
 }
