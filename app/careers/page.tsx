@@ -29,7 +29,7 @@ export default function Career() {
           </p>
           <button
             onClick={scrollToOpenings}
-            className="w-45 h-auto transform rounded-lg bg-blue-800 px-6 py-2 font-medium text-white transition-all duration-300 hover:-translate-y-0.5 hover:bg-blue-600"
+            className="w-45 h-auto transform rounded-lg bg-blue-800 px-6 py-2 font-medium text-white transition-all duration-300 hover:-translate-y-0.5 hover:bg-blue-600 cursor-pointer"
           >
             Explore Careers
           </button>
