@@ -117,7 +117,7 @@ export default function AboutPage() {
           {services.map((item, idx) => (
             <li
               key={idx}
-              className="relative overflow-hidden flex flex-col justify-end h-auto rounded-2xl bg-gray-100 px-6 py-6
+              className="relative overflow-hidden flex flex-col justify-end h-auto rounded-2xl bg-gray-50 px-6 py-6
             w-full sm:w-[calc(50%-0.5rem)] md:w-[calc(33.333%-0.666rem)]"
             >
               <ShineBorder

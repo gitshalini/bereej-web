@@ -22,14 +22,13 @@ export default async function BenefitCards({ params }: PageProps) {
             <ShineBorder
               shineColor={["#A07CFE", "#FE8FB5", "#FFBE7B"]}
               className="rounded-2xl h-full"
-            >
-              <div className="flex flex-col justify-end min-h-32 h-auto rounded-2xl border border-gray-800 bg-white px-6 py-6 shadow-xl">
-                <h3 className="text-xl text-neutral-800 font-semibold mb-2">
-                  {item.title}
-                </h3>
-                <p className="text-md text-neutral-400">{item.description}</p>
-              </div>
-            </ShineBorder>
+            />
+            <div className="flex flex-col justify-end min-h-32 h-auto rounded-2xl border border-gray-800 bg-white px-6 py-6 shadow-xl">
+              <h3 className="text-xl text-neutral-800 font-semibold mb-2">
+                {item.title}
+              </h3>
+              <p className="text-md text-neutral-400">{item.description}</p>
+            </div>
           </li>
         ))}
       </ul>

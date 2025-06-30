@@ -102,7 +102,7 @@ export default async function CaseStudyDetailPage({
               (item: { title: string; para: string }, i: number) => (
                 <li
                   key={i}
-                  className="flex flex-col justify-around min-h-32 h-auto rounded-2xl bg-gray-100 px-6 py-6
+                  className="flex flex-col justify-around min-h-32 h-auto rounded-2xl bg-gray-50 px-6 py-6
                   w-full sm:w-[calc(50%-0.5rem)] md:w-[calc(33.333%-0.666rem)] relative overflow-hidden"
                 >
                   <ShineBorder
