@@ -3,7 +3,7 @@ export const services = [
     Icon: "/images/erp.png",
     id: "ERP-Consultancy",
     title: "ERP Consultancy",
-    className: "col-span-3 lg:col-span-1",
+    className: "col-span-3 lg:col-span-1 bg-[#e4f1ff]",
     description:
       "Efficiently managing and optimizing applications to ensure seamless performance and enhance business productivity.",
     cta: "Learn more",
@@ -72,7 +72,7 @@ export const services = [
     id: "WordPress-CMS-Development",
     title: "WordPress/CMS Development",
     Icon: "/images/wordpress.png",
-    className: "col-span-3 lg:col-span-2",
+    className: "col-span-3 lg:col-span-2 bg-[#e4e7ff]",
     description:
       "Crafting dynamic and customizable websites using WordPress, the leading content management system.",
     cta: "Learn more",
@@ -140,7 +140,7 @@ export const services = [
     id: "Cloud-Services-and-Migration",
     title: "Cloud Services and Migration",
     Icon: "/images/cloud-cog.svg",
-    className: "col-span-3 lg:col-span-2",
+    className: "col-span-3 lg:col-span-2 bg-[#faf1e3]",
     description:
       "Transitioning your business to the cloud, unlocking scalability, efficiency, and enhanced collaboration across your organization.",
     cta: "Learn more",
@@ -193,7 +193,7 @@ export const services = [
     id: "Cybersecurity-Solutions",
     title: "Cybersecurity Solutions",
     Icon: "/images/globe-lock.svg",
-    className: "col-span-3 lg:col-span-1",
+    className: "col-span-3 lg:col-span-1 bg-[#c6edd5]",
     description:
       "Safeguarding your invaluable digital assets and fortifying your online against the relentless and ever-evolving global landscape of cyber threats.",
     cta: "Learn more",
@@ -242,7 +242,7 @@ export const services = [
     id: "Mobile-App-Development",
     title: "Mobile App Development",
     Icon: "/images/monitor-smartphone.svg",
-    className: "col-span-3 lg:col-span-1",
+    className: "col-span-3 lg:col-span-1 bg-[#f0d7f9]",
     description:
       "Creating captivating and user-friendly mobile applications that engage your audience and enhance your brand presence is a crucial aspect of business.",
     cta: "Learn more",
@@ -306,7 +306,7 @@ export const services = [
     id: "Data-Analytics-and-Insights",
     title: "Data Analytics and Insights",
     Icon: "/images/data-analyst.png",
-    className: "col-span-3 lg:col-span-2",
+    className: "col-span-3 lg:col-span-2 bg-[#f1d1a2]",
     description:
       "Unlocking the power of data to make informed decisions, identify trends, and gain a competitive edge in your industry.",
     cta: "Learn more",
@@ -349,7 +349,7 @@ export const services = [
     id: "Custom-Software-Development",
     title: "Custom Software Development",
     Icon: "/images/software-engineer.png",
-    className: "col-span-3 lg:col-span-2",
+    className: "col-span-3 lg:col-span-2 bg-[#edc9c9]",
     description:
       "Tailor-made software solutions designed to align seamlessly with your unique business needs and drive productivity to new heights.",
     cta: "Learn more",
@@ -416,7 +416,7 @@ export const services = [
   {
     id: "Digital-Consulting",
     title: "Digital Consulting",
-    className: "col-span-3 lg:col-span-1",
+    className: "col-span-3 lg:col-span-1 bg-[#bce0f1]",
     description:
       "Digital ConsultingUnleashing the full potential of your business through expert guidance and strategic implementation of cutting-edge technologies.",
     cta: "Learn more",
@@ -464,7 +464,7 @@ export const services = [
     id: "Web-Development",
     title: "Web Development",
     Icon: "/images/world-wide-web.png",
-    className: "col-span-3 lg:col-span-1",
+    className: "col-span-3 lg:col-span-1 bg-[#e4e7ff]",
     description:
       "Focus on safeguarding digital assets, sensitive information, and user accounts from unauthorized access and cyber threats.",
     cta: "Learn more",
@@ -527,7 +527,7 @@ export const services = [
     id: "Website-Maintenance",
     title: "Website Maintenance",
     Icon: "/images/maintenance.svg",
-    className: "col-span-3 lg:col-span-2",
+    className: "col-span-3 lg:col-span-2 bg-[#faf1e3]",
     description:
       "Involves the ongoing management and updates required to keep a website functioning smoothly.",
     cta: "Learn more",
@@ -576,7 +576,7 @@ export const services = [
     id: "IT-Consultancy",
     title: "IT Consultancy",
     Icon: "/images/erp.png",
-    className: "col-span-3 lg:col-span-2",
+    className: "col-span-3 lg:col-span-2 bg-[#c6edd5]",
     description:
       "Provide expert guidance and strategic advice to organizations seeking to optimize their technology infrastructure.",
     cta: "Learn more",
@@ -628,7 +628,7 @@ export const services = [
     id: "QA-Testing",
     title: "Q&A Testing",
     Icon: "/images/check.png",
-    className: "col-span-3 lg:col-span-1",
+    className: "col-span-3 lg:col-span-1 bg-[#f0d7f9]",
     description:
       "Involves a systematic process of evaluating software applications or systems to identify and fix issues.",
     cta: "Learn more",
@@ -691,7 +691,7 @@ export const services = [
     id: "Account-Security",
     title: "Account & Security",
     Icon: "/images/privacy-policy.png",
-    className: "col-span-3 lg:col-span-3",
+    className: "col-span-3 lg:col-span-3 bg-[#e4f1ff]",
     description:
       "Focus on safeguarding digital assets, sensitive information, and user accounts from unauthorized access and cyber threats.",
     cta: "Learn more",

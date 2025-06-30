@@ -19,7 +19,7 @@ export default function CaseStudiesPreview() {
       title: "IT Consultancy",
       value: "IT Consultancy",
       content: (
-        <div className="w-full overflow-hidden relative h-full rounded-2xl p-10 text-xl md:text-4xl font-bold text-black bg-gradient-to-r from-purple-200 via-sky-100 to-pink-50">
+        <div className="w-full overflow-hidden relative h-full rounded-2xl p-10 text-xl md:text-4xl font-bold text-black bg-gradient-to-br from-[#d1e0ff] via-[#ffffff] to-[#f3d1f4]">
           <p className="mb-2.5">Streamlining Worfklows</p>
           <DummyContent image="/images/unsplash.jpeg" />
         </div>
@@ -76,22 +76,6 @@ export default function CaseStudiesPreview() {
         </motion.h2>
       </div>
 
-      {/* <FocusCards
-        cards={
-          caseStudies
-            .slice(0, 3)
-            .map(({ id, title, description, image, category }) => ({
-              id,
-              title,
-              description,
-              image,
-              category,
-            })) as Pick<
-            (typeof caseStudies)[number],
-            "id" | "title" | "description" | "image" | "category"
-          >[]
-        }
-      /> */}
       <div className="h-[30rem] md:h-[40rem] [perspective:1000px] relative b flex flex-col max-w-7xl mx-auto w-full  items-start justify-start">
         <Tabs tabs={tabs} />
       </div>

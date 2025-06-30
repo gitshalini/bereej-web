@@ -5,6 +5,7 @@ import VerticalTabs from "@/components/layout/verticalTabs";
 import { services } from "../services/services";
 import Link from "next/link";
 import ContactCard from "@/components/layout/contactCard";
+import { ShineBorder } from "@/components/magicui/shine-border";
 
 const teamMembers = [
   {
@@ -114,25 +115,30 @@ export default function AboutPage() {
       <div className="mx-auto w-full flex flex-col max-w-7xl bg-white py-16">
         <ul className="flex flex-wrap w-full gap-4 list-none pt-16">
           {services.map((item, idx) => (
-            <Link
-              href={`/services/${item.id}`}
+            <li
               key={idx}
-              className="flex flex-col justify-end h-auto rounded-2xl border border-gray-800 bg-gray-50 px-6 py-6
-                  w-full sm:w-[calc(50%-0.5rem)] md:w-[calc(33.333%-0.666rem)]"
+              className="relative overflow-hidden flex flex-col justify-end h-auto rounded-2xl bg-gray-100 px-6 py-6
+            w-full sm:w-[calc(50%-0.5rem)] md:w-[calc(33.333%-0.666rem)]"
             >
-              {item.Icon && (
-                <Image
-                  width={100}
-                  height={100}
-                  src={item.Icon}
-                  alt={item.title}
-                  className="w-12 h-12"
-                />
-              )}
-              <h2 className="relative z-10 mt-3 text-xl font-bold text-neutral-800">
-                {item.title}
-              </h2>
-            </Link>
+              <ShineBorder
+                shineColor={["#A07CFE", "#FE8FB5", "#FFBE7B"]}
+                className="rounded-2xl h-full"
+              />
+              <Link href={`/services/${item.id}`}>
+                {item.Icon && (
+                  <Image
+                    width={100}
+                    height={100}
+                    src={item.Icon}
+                    alt={item.title}
+                    className="w-12 h-12"
+                  />
+                )}
+                <h2 className="relative z-10 mt-3 text-xl font-bold text-neutral-800">
+                  {item.title}
+                </h2>
+              </Link>
+            </li>
           ))}
         </ul>
         <div className="flex flex-col py-16">

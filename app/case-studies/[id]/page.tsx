@@ -4,6 +4,7 @@ import { PagesHero } from "@/components/layout/pagesHero";
 import { notFound } from "next/navigation";
 import Testimonials from "@/components/home/Testimonials";
 import ContactCard from "@/components/layout/contactCard";
+import { ShineBorder } from "@/components/magicui/shine-border";
 
 export async function generateMetadata(props: {
   params: Promise<{ id: string }>;
@@ -101,9 +102,14 @@ export default async function CaseStudyDetailPage({
               (item: { title: string; para: string }, i: number) => (
                 <li
                   key={i}
-                  className="flex flex-col justify-around min-h-32 h-auto rounded-2xl border border-gray-800 bg-white px-6 py-6 shadow-xl
-                  w-full sm:w-[calc(50%-0.5rem)] md:w-[calc(33.333%-0.666rem)]"
+                  className="flex flex-col justify-around min-h-32 h-auto rounded-2xl bg-gray-100 px-6 py-6
+                  w-full sm:w-[calc(50%-0.5rem)] md:w-[calc(33.333%-0.666rem)] relative overflow-hidden"
                 >
+                  <ShineBorder
+                    shineColor={["#A07CFE", "#FE8FB5", "#FFBE7B"]}
+                    className="rounded-2xl h-full"
+                  />
+
                   <h3 className="text-xl text-neutral-800 font-semibold mb-2">
                     {item.title}
                   </h3>

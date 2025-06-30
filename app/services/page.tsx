@@ -40,11 +40,13 @@ export default function ServicesPage() {
           </p>
         </div>
       </section>
-      <BentoGrid>
-        {services.map((services, idx) => (
-          <BentoCard key={idx} {...services} />
-        ))}
-      </BentoGrid>
+      <div className="mb-16">
+        <BentoGrid>
+          {services.map((services, idx) => (
+            <BentoCard key={idx} {...services} />
+          ))}
+        </BentoGrid>
+      </div>
       <ContactCard />
     </div>
   );

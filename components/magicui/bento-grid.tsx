@@ -74,7 +74,7 @@ const BentoCard = ({
             height={300}
             src={background}
             alt="Security"
-            className="absolute right-2 top-0 h-[300px] w-full scale-75 border-none transition-all duration-300 ease-out [mask-image:linear-gradient(to_top,transparent_10%,#000_100%)] group-hover:scale-90"
+            className="absolute right-2 top-0 h-auto w-full scale-75 border-none transition-all duration-300 ease-out [mask-image:linear-gradient(to_top,transparent_10%,#000_100%)] group-hover:scale-90"
           />
         </div>
       )}
@@ -113,7 +113,10 @@ const BentoCard = ({
           size="sm"
           className="pointer-events-auto"
         >
-          <Link href={`/services/${id}`}>
+          <Link
+            href={`/services/${id}`}
+            className="bg-black text-white hover:bg-black hover:text-white"
+          >
             {cta}
             <ArrowRightIcon className="ms-2 h-4 w-4 rtl:rotate-180" />
           </Link>

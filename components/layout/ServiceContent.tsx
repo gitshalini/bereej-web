@@ -5,6 +5,7 @@ import Image from "next/image";
 import { useRef } from "react";
 import CaseStudiesPreview from "@/components/home/CaseStudiesPreview";
 import { PagesHero } from "@/components/layout/pagesHero";
+import { ShineBorder } from "../magicui/shine-border";
 
 export interface ServiceType {
   id: string;
@@ -89,9 +90,13 @@ export default function ServiceContent({ service }: { service: ServiceType }) {
               (item: { title: string; description: string }, i: number) => (
                 <li
                   key={i}
-                  className="flex flex-col justify-start min-h-32 h-auto rounded-2xl border border-gray-800 bg-white px-6 py-6 shadow-xl
-                  w-full sm:w-[calc(50%-0.5rem)] md:w-[calc(33.333%-0.666rem)]"
+                  className="flex flex-col justify-start min-h-32 h-auto rounded-2xl px-6 py-6 bg-gray-100
+                  w-full sm:w-[calc(50%-0.5rem)] md:w-[calc(33.333%-0.666rem)] relative overflow-hidden"
                 >
+                  <ShineBorder
+                    shineColor={["#A07CFE", "#FE8FB5", "#FFBE7B"]}
+                    className="rounded-2xl h-full"
+                  />
                   <h3 className="text-xl text-neutral-800 font-semibold mb-2">
                     {item.title}
                   </h3>
