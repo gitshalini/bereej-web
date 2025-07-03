@@ -73,7 +73,7 @@ export default function Career() {
                 <Link
                   key={job.id}
                   href={`/careers/${job.id}`}
-                  className="w-auto transform rounded-lg bg-black px-6 py-2 font-medium text-white transition-all duration-300 hover:-translate-y-0.5 hover:bg-gray-800"
+                  className="w-auto transform rounded-lg bg-[#0071eb] hover:bg-[#0062cc] px-6 py-2 font-medium text-white transition-all duration-300 hover:-translate-y-0.5"
                 >
                   Apply
                 </Link>

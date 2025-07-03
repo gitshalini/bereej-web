@@ -140,7 +140,7 @@ export const Carousel = ({ items, initialScroll = 0 }: CarouselProps) => {
                   },
                 }}
                 key={"card" + index}
-                className="rounded-3xl last:pr-[5%] md:last:pr-[5%] border"
+                className="rounded-3xl last:pr-[5%] md:last:pr-[5%]"
               >
                 {item}
               </motion.div>
@@ -163,7 +163,7 @@ export const Card = ({
   return (
     <motion.div
       layoutId={layout ? `card-${card.title}` : undefined}
-      className="relative z-10 flex w-56 flex-col items-start justify-start overflow-hidden rounded-3xl bg-white min-h-[30rem] h-full md:w-96"
+      className="border relative z-10 flex w-56 flex-col items-start justify-start overflow-hidden rounded-3xl bg-white min-h-[30rem] h-full md:w-96"
     >
       <Link href={`/case-studies/${card.id}`}>
         <div className="pointer-events-none absolute inset-x-0 top-0 z-30 h-full bg-gradient-to-b from-black/50 via-transparent to-transparent" />

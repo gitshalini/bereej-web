@@ -30,7 +30,7 @@ export default function Header() {
         { name: "About Us", link: "/about" },
         { name: "Testimonials", link: "/testimonials" },
         { name: "Our Values", link: "/our-values" },
-        { name: "Leadership", link: "/our-team" },
+        { name: "Leadership", link: "/about#Leader" },
         { name: "Why Choose Us", link: "/why-choose-us" },
         { name: "FAQ", link: "/faq" },
         { name: "Careers", link: "/careers" },

@@ -19,6 +19,7 @@ const teamMembers = [
     name: "Advait Joshi",
     role: "Solution Architect",
     image: "/images/Advait.png",
+    linkedin: "",
     bgColor: "bg-[#b8afd7]",
   },
   {
@@ -141,7 +142,7 @@ export default function AboutPage() {
             </li>
           ))}
         </ul>
-        <div className="flex flex-col py-16">
+        <div className="flex flex-col py-16" id="Leader">
           <h3 className="text-2xl text-neutral-800 font-medium uppercase text-center w-full mb-4">
             LEADERSHIP TEAM
           </h3>
@@ -151,7 +152,7 @@ export default function AboutPage() {
           <section className="w-full pt-16">
             <div className="grid gap-4 grid-cols-4 auto-cols-fr grid-rows-[auto] mb-4 pt-[26px]">
               {teamMembers.map((member, index) => (
-                <Link key={index} href={"/our-values"}>
+                <Link key={index} href={member.linkedin} target="_blank">
                   <div
                     className={`${member.bgColor} rounded-xl aspect-[308/295] mb-6 relative overflow-visible`}
                   >

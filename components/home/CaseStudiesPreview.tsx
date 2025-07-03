@@ -19,7 +19,7 @@ export default function CaseStudiesPreview() {
     {
       title: "IT Consultancy",
       value: "IT Consultancy",
-      bg: "bg-sky-100 cursor-pointer",
+      bg: "bg-sky-100 text-sky-800 cursor-pointer font-semibold",
       content: (
         <div className="w-full overflow-hidden relative h-full rounded-2xl p-10 text-xl md:text-4xl font-bold text-white bg-gradient-to-br from-cyan-500 via-sky-400 to-blue-500">
           <p className="mb-2.5">Streamlining Workflows</p>
@@ -30,7 +30,7 @@ export default function CaseStudiesPreview() {
     {
       title: "Development/Design",
       value: "Development/Design",
-      bg: "bg-pink-200 cursor-pointer",
+      bg: "bg-pink-200 text-pink-800 font-semibold cursor-pointer",
       content: (
         <div className="w-full overflow-hidden relative h-full rounded-2xl p-10 text-xl md:text-4xl font-bold text-white bg-gradient-to-r from-fuchsia-500 via-pink-500 to-rose-400">
           <p className="mb-2.5">
@@ -43,7 +43,7 @@ export default function CaseStudiesPreview() {
     {
       title: "IT Development",
       value: "IT Development",
-      bg: "bg-orange-100 cursor-pointer",
+      bg: "bg-orange-100 text-orange-800 font-semibold cursor-pointer",
       content: (
         <div className="w-full overflow-hidden relative h-full rounded-2xl p-10 text-xl md:text-4xl font-bold text-white bg-gradient-to-r from-amber-500 via-orange-400 to-rose-300">
           <p className="mb-2.5">Implementation of Billing Charge in SAP IS-U</p>
@@ -54,7 +54,7 @@ export default function CaseStudiesPreview() {
     {
       title: "IT Design",
       value: "IT Design",
-      bg: "bg-teal-100 cursor-pointer",
+      bg: "bg-teal-100 text-teal-800 font-semibold cursor-pointer",
       content: (
         <div className="w-full overflow-hidden relative h-full rounded-2xl p-10 text-xl md:text-4xl font-bold text-white bg-gradient-to-r from-emerald-500 via-teal-400 to-cyan-400">
           <p className="mb-2.5">Onson - marketing agency website</p>

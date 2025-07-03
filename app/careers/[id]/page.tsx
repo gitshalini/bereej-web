@@ -2,6 +2,7 @@ import { career } from "../career";
 import { notFound } from "next/navigation";
 import JobForm from "@/components/jobfrom";
 import { PagesHero } from "@/components/layout/pagesHero";
+import Image from "next/image";
 
 interface CareerPageProps {
   params: Promise<{ id: string }>;
@@ -24,8 +25,17 @@ export default async function JobDetailPage({ params }: CareerPageProps) {
   return (
     <div className="max-w-7xl mx-auto px-4 py-16">
       <PagesHero title={job.title} />
+      <Image
+        src="/images/image1.webp"
+        alt=""
+        sizes="(max-width: 1439px) 100vw, 1440px"
+        className="w-full h-120 object-cover rounded-xl"
+        width={0}
+        height={0}
+        priority
+      />
 
-      <div className="max-w-7xl mx-auto px-4 flex flex-col lg:flex-row gap-20">
+      <div className="py-24 px-4 flex flex-col lg:flex-row gap-20">
         {/* Left Column */}
         <div className="lg:w-2/3 space-y-8">
           <div>

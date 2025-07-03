@@ -69,7 +69,7 @@ export const Tabs = ({
                 )}
               />
             )}
-            <span className="relative block text-black">{tab.title}</span>
+            <span className="relative block">{tab.title}</span>
           </button>
         ))}
       </div>

@@ -27,9 +27,11 @@ export function PagesHero({
       >
         {title}
       </h1>
-      <div className="text-xl text-neutral-600 mb-8 max-w-4xl text-center">
-        {description}
-      </div>
+      {description && (
+        <div className="text-xl text-neutral-600 mb-8 max-w-4xl text-center">
+          {description}
+        </div>
+      )}
     </motion.div>
   );
 }

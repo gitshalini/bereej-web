@@ -92,14 +92,16 @@ export default function ValuesPage() {
         </div>
         <VerticalTabs tabs={tabs} />
       </div>
-      <Image
-        src="/images/image1.webp"
-        alt="team image"
-        width={100}
-        height={100}
-        sizes={"(max-width: 1439px) 100vw, 1440px"}
-        className="w-full h-[600] object-cover rounded-xl py-16"
-      />
+      <div className="relative w-full h-[600px] rounded-xl overflow-hidden py-16">
+        <Image
+          src="/images/image1.webp"
+          alt="team-image"
+          fill
+          className="object-cover"
+          priority
+        />
+      </div>
+
       <div className="mx-auto w-full flex flex-col max-w-7xl bg-white py-16">
         <section className="w-full flex flex-col">
           <div className="w-full flex mb-16">
