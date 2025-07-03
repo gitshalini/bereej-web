@@ -272,7 +272,10 @@ export const NavbarLogo = () => {
       href="/"
       className="relative z-20 mr-4 flex items-center space-x-2 px-2 py-1 text-sm font-normal text-black"
     >
-      <Image src="/images/logo.png" alt="logo" width={100} height={100} />
+      <Image src="/favicon.png" alt="logo" width={40} height={40} />
+      <span className="font-semibold text-black text-lg">
+        Bereej Technology
+      </span>
     </Link>
   );
 };

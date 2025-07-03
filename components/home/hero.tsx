@@ -30,7 +30,7 @@ export default function Hero() {
       <BackgroundBeamsWithCollision>
         <div className="absolute top-0 mx-auto flex max-w-7xl flex-col items-center justify-center h-full">
           <div className="px-4 py-10 md:py-20">
-            <h1 className="relative z-10 mx-auto max-w-4xl text-center text-2xl font-semibold text-slate-700 md:text-4xl lg:text-7xl">
+            <h1 className="relative z-10 mx-auto max-w-4xl text-center text-2xl font-bold text-black md:text-4xl lg:text-7xl -tracking-normal">
               {"Transforming ideas into inspiring experiences"
                 .split(" ")
                 .map((word, index) => (
@@ -43,7 +43,7 @@ export default function Hero() {
                       delay: index * 0.1,
                       ease: "easeInOut",
                     }}
-                    className="mr-2 inline-block"
+                    className="mr-6 inline-block capitalize"
                   >
                     {word}
                   </motion.span>
@@ -60,7 +60,7 @@ export default function Hero() {
                 duration: 0.3,
                 delay: 0.8,
               }}
-              className="relative z-10 mx-auto max-w-xl py-4 text-center text-lg font-normal text-neutral-600"
+              className="relative z-10 mx-auto max-w-xl pt-7 text-center text-lg font-normal text-neutral-600"
             >
               Your one-stop digital software solutions company. At Bereej Tech,
               we thrive on transforming your ideas into cutting-edge digital
@@ -77,12 +77,12 @@ export default function Hero() {
                 duration: 0.3,
                 delay: 1,
               }}
-              className="relative z-10 mt-8 flex flex-wrap items-center justify-center gap-4"
+              className="relative z-10 mt-10 flex flex-wrap items-center justify-center gap-4"
             >
-              <button className="w-60 transform rounded-lg bg-black px-6 py-2 font-medium text-white transition-all duration-300 hover:-translate-y-0.5 hover:bg-gray-800">
+              <button className="w-60 h-16 text-lg transform rounded-lg bg-[#0071eb] hover:bg-[#0062cc] px-6 py-2 font-medium text-white transition-all duration-300 hover:-translate-y-0.5">
                 <Link href="/contact">Start a Project</Link>
               </button>
-              <button className="w-60 transform rounded-lg border border-gray-300 bg-white px-6 py-2 font-medium text-black transition-all duration-300 hover:-translate-y-0.5 hover:bg-gray-100">
+              <button className="w-60 h-16 text-lg transform rounded-lg border border-gray-300 bg-white px-6 py-2 font-medium text-black transition-all duration-300 hover:-translate-y-0.5 hover:bg-gray-100">
                 <Link href="/case-studies">Our Work</Link>
               </button>
             </motion.div>

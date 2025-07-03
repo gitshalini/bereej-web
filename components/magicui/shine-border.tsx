@@ -30,20 +30,35 @@ interface ShineBorderProps extends React.HTMLAttributes<HTMLDivElement> {
 export function ShineBorder({
   borderWidth = 1,
   duration = 14,
-  shineColor = "#000000",
+  shineColor,
   className,
   style,
   ...props
 }: ShineBorderProps) {
+  // Default user-centric, bright color palette with good contrast
+  const defaultColors = [
+    "#d23859", // bright red-pink (rgb(210,56,89))
+    "#f59e0b", // amber (rgb(245,158,11))
+    "#10b981", // teal (rgb(16,185,129))
+    "#3b82f6", // blue (rgb(59,130,246))
+    "#8b5cf6", // violet (rgb(139,92,246))
+  ];
+
+  const colors = shineColor
+    ? Array.isArray(shineColor)
+      ? shineColor
+      : [shineColor]
+    : defaultColors;
+
   return (
     <div
       style={
         {
           "--border-width": `${borderWidth}px`,
           "--duration": `${duration}s`,
-          backgroundImage: `radial-gradient(#f2f2f2,#f2f2f2, ${
-            Array.isArray(shineColor) ? shineColor.join(",") : shineColor
-          },#f2f2f2,#f2f2f2)`,
+          backgroundImage: `radial-gradient(circle at center, ${colors.join(
+            ", "
+          )})`,
           backgroundSize: "300% 300%",
           mask: `linear-gradient(#f2f2f2 0 0) content-box, linear-gradient(#f2f2f2 0 0)`,
           WebkitMask: `linear-gradient(#f2f2f2 0 0) content-box, linear-gradient(#f2f2f2 0 0)`,

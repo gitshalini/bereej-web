@@ -21,6 +21,10 @@ interface BentoCardProps extends ComponentPropsWithoutRef<"div"> {
   Icon?: string;
   description: string;
   cta: string;
+  ctaColor: {
+    base: string;
+    hover: string;
+  };
   index?: number; // for stagger delay
 }
 
@@ -46,6 +50,7 @@ const BentoCard = ({
   Icon,
   description,
   cta,
+  ctaColor,
   index = 0,
 }: BentoCardProps) => {
   const ref = useRef(null);
@@ -59,7 +64,7 @@ const BentoCard = ({
       transition={{
         duration: 0.6,
         ease: "easeOut",
-        delay: index * 0.15, // staggered animation
+        delay: index * 0.15,
       }}
       className={cn(
         "group relative col-span-3 flex flex-col justify-between overflow-hidden rounded-xl",
@@ -78,6 +83,7 @@ const BentoCard = ({
           />
         </div>
       )}
+
       <div className="pointer-events-none z-10 flex transform-gpu flex-col gap-1 p-6 transition-all duration-300 group-hover:-translate-y-10">
         {Icon && (
           <div className="h-12 w-12 origin-left transform-gpu text-neutral-700 transition-all duration-300 ease-in-out group-hover:scale-75">
@@ -85,26 +91,32 @@ const BentoCard = ({
               width={12}
               height={12}
               src={Icon}
-              alt="security Icon"
+              alt={`${title} Icon`}
               className="w-12 h-12"
             />
           </div>
         )}
-        <h3 className="text-xl font-semibold text-neutral-700">{title}</h3>
-        <p className="max-w-lg text-neutral-400">{description}</p>
+        <h3 className="text-xl font-semibold text-neutral-800">{title}</h3>
+        <p className="max-w-lg text-neutral-600">{description}</p>
+        {/* Mobile CTA */}
         <div className="block md:hidden pb-4">
           <Link
             href={`/services/${id}`}
-            className="text-base font-semibold text-blue-600 underline"
+            className={cn(
+              "text-base font-semibold underline",
+              ctaColor.base,
+              ctaColor.hover
+            )}
           >
             {cta}
           </Link>
         </div>
       </div>
 
+      {/* Desktop CTA */}
       <div
         className={cn(
-          "pointer-events-none absolute bottom-0 flex w-full translate-y-10 transform-gpu flex-row items-center p-4 opacity-0 transition-all duration-300 group-hover:translate-y-0 group-hover:opacity-100"
+          "absolute bottom-0 flex w-full translate-y-10 transform-gpu flex-row items-center p-4 opacity-0 transition-all duration-300 group-hover:translate-y-0 group-hover:opacity-100"
         )}
       >
         <Button
@@ -115,15 +127,21 @@ const BentoCard = ({
         >
           <Link
             href={`/services/${id}`}
-            className="bg-black text-white hover:bg-black hover:text-white"
+            className={cn(
+              "underline hover:bg-transparent font-semibold",
+              ctaColor?.base,
+              ctaColor?.hover
+            )}
           >
             {cta}
             <ArrowRightIcon className="ms-2 h-4 w-4 rtl:rotate-180" />
           </Link>
         </Button>
       </div>
+
       <div className="pointer-events-none absolute inset-0 transform-gpu transition-all duration-300 group-hover:bg-black/[.03]" />
     </motion.div>
   );
 };
+
 export { BentoGrid, BentoCard };

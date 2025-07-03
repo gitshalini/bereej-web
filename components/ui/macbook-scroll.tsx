@@ -1,6 +1,12 @@
 "use client";
 import React, { useEffect, useRef, useState } from "react";
-import { motion, useScroll, useTransform, MotionValue } from "motion/react";
+import {
+  motion,
+  useScroll,
+  useTransform,
+  useSpring,
+  MotionValue,
+} from "framer-motion";
 import Image from "next/image";
 
 export const MacbookScroll = ({
@@ -35,11 +41,13 @@ export const MacbookScroll = ({
     [0.6, isMobile ? 1 : 1.2]
   );
   const translate = useTransform(scrollYProgress, [0, 1], [0, 300]);
-  const rotate = useTransform(
-    scrollYProgress,
-    [0.1, 0.12, 0.3],
-    [24.5587, 24.5587, 0]
-  );
+
+  const rawRotate = useTransform(scrollYProgress, [0.02, 0.08], [25, 0]);
+  const rotate = useSpring(rawRotate, {
+    damping: 60,
+    stiffness: 200,
+  });
+
   const textTransform = useTransform(scrollYProgress, [0, 0.3], [0, 100]);
   const textOpacity = useTransform(scrollYProgress, [0, 0.2], [1, 0]);
 
@@ -51,7 +59,7 @@ export const MacbookScroll = ({
       <style>
         {`
           :root {
-            --color-1: #38bdf8;
+            --color-1: #60a5fa;
           }
 
           @keyframes border-move {
@@ -66,10 +74,10 @@ export const MacbookScroll = ({
             padding: 4px;
             background: linear-gradient(
               125deg,
-              #cbb9c3,
-              #b47599,
-              #eec37b,
-              #38bdf8
+              #60a5fa,
+              #a78bfa,
+              #f472b6,
+              #facc15
             );
             background-size: 300% 300%;
             animation: border-move 6s ease infinite;
@@ -98,7 +106,7 @@ export const MacbookScroll = ({
             z-index: 0;
             border-radius: 9999px;
             filter: blur(40px);
-            opacity: 0.7;
+            opacity: 0.5;
           }
         `}
       </style>
@@ -149,9 +157,6 @@ export const Lid = ({
         }}
         className="w-[50rem] relative"
       >
-        {/* Radial background glow behind the image */}
-        {/* <div className="radial-glow" /> */}
-
         {/* Animated Gradient Border */}
         <div className="animated-border rounded-[20px] relative z-10">
           <div className="relative z-20 rounded-[16px] overflow-hidden bg-[#272729]">

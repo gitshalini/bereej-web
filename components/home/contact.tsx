@@ -124,7 +124,7 @@ export default function Contact() {
         </div>
       </div>
 
-      <button className="cursor-pointer flex space-x-2 items-center group text-base px-4 py-2 rounded-lg bg-gradient-to-b from-black to-neutral-400 text-white shadow-[0px_2px_0px_0px_rgba(255,255,255,0.3)_inset]">
+      <button className="w-50 h-10 text-lg transform rounded-lg hover:bg-[#0062cc] px-6 py-2 font-medium transition-all duration-300 hover:-translate-y-0.5 cursor-pointer flex space-x-2 items-center group bg-[#0071eb] text-white shadow-[0px_2px_0px_0px_rgba(255,255,255,0.3)_inset]">
         <Link href="/contact">Get in Touch</Link>
         <svg
           stroke="currentColor"

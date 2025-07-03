@@ -1,6 +1,6 @@
 export const caseStudies = [
   {
-    id: "Streamlining-Worfklows",
+    id: "streamlining-worfklows",
     title: "Streamlining Worfklows",
     category: "IT Consultancy/Development",
     description:
@@ -37,7 +37,7 @@ export const caseStudies = [
     resImage: "/images/sw-result 1.webp",
   },
   {
-    id: "Enhancing-Market-Reach-with-E-commerce-Integration",
+    id: "enhancing-market-reach-with-e-commerce-integration",
     title: "Enhancing Market Reach with E-commerce Integration",
     category: "Development/Design",
     description:
@@ -73,7 +73,7 @@ export const caseStudies = [
     resImage: "/images/sw-result 1.webp",
   },
   {
-    id: "Implementation-of-Biling-Charge-in-SAP-IS-U",
+    id: "implementation-of-biling-charge-in-sap-is-u",
     title: "Implementation of Biling Charge in SAP IS-U",
     category: "IT Consultancy/Development",
     description:
@@ -106,7 +106,7 @@ export const caseStudies = [
     resImage: "/images/sw-result 1.webp",
   },
   {
-    id: "Streamlining-IT-Infrastructure",
+    id: "streamlining-it-infrastructure",
     title: "Streamlining IT Infrastructure",
     category: "IT Consultancy/Development",
     description:
@@ -143,7 +143,7 @@ export const caseStudies = [
     resImage: "/images/sw-result 1.webp",
   },
   {
-    id: "Onson-marketing-agency-website",
+    id: "onson-marketing-agency-website",
     title: "Onson - marketing agency website",
     category: "IT Consultancy/Design",
     description:

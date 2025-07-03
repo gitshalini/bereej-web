@@ -1,12 +1,16 @@
 export const services = [
   {
     Icon: "/images/erp.png",
-    id: "ERP-Consultancy",
+    id: "erp-consultancy",
     title: "ERP Consultancy",
     className: "col-span-3 lg:col-span-1 bg-[#e4f1ff]",
     description:
       "Efficiently managing and optimizing applications to ensure seamless performance and enhance business productivity.",
     cta: "Learn more",
+    ctaColor: {
+      base: "text-[#0071eb] font-semibold",
+      hover: "hover:!text-[#0071eb] font-semibold",
+    },
     Service: "Service Description",
     servicedesc:
       "At Bereej Tech , we specialize in revolutionizing businesses through comprehensive ERP consultancy services. Our expert team works closely with clients to understand their unique needs and challenges, crafting tailored ERP solutions that streamline operations, drive efficiency, and fuel sustainable growth. From initial assessment to implementation and ongoing support, we guide organizations through every stage of their ERP journey, ensuring seamless integration and maximum return on investment. With a focus on innovation and industry expertise, we empower businesses to adapt, thrive, and stay ahead in today's rapidly evolving digital landscape. Predominantly we work in SAP and Oracle NetSuite.",
@@ -69,13 +73,17 @@ export const services = [
     background: "/images/Account-Security.png",
   },
   {
-    id: "WordPress-CMS-Development",
+    id: "wordPress-cms-development",
     title: "WordPress/CMS Development",
     Icon: "/images/wordpress.png",
     className: "col-span-3 lg:col-span-2 bg-[#e4e7ff]",
     description:
       "Crafting dynamic and customizable websites using WordPress, the leading content management system.",
     cta: "Learn more",
+    ctaColor: {
+      base: "text-[#3844ad] font-semibold",
+      hover: "hover:!text-[#3844ad] font-semibold",
+    },
     Service: "Service Description",
     servicedesc:
       "WordPress development and support encompasses the creation, maintenance, and enhancement of websites utilizing the WordPress platform. This multifaceted role involves designing and developing custom themes and plugins tailored to clients' needs, ensuring seamless functionality and user experience. Additionally, it entails ongoing support, including troubleshooting issues, implementing updates, and optimizing site performance for speed and security. WordPress developers collaborate closely with clients to understand their objectives, translating them into innovative digital solutions that align with current industry standards and best practices. With a keen focus on both front-end design and back-end development, WordPress specialists empower businesses to establish and maintain a robust online presence, driving engagement and achieving their strategic goals.",
@@ -137,13 +145,17 @@ export const services = [
     background: "/images/Account-Security.png",
   },
   {
-    id: "Cloud-Services-and-Migration",
+    id: "cloud-services-and-migration",
     title: "Cloud Services and Migration",
     Icon: "/images/cloud-cog.svg",
     className: "col-span-3 lg:col-span-2 bg-[#faf1e3]",
     description:
       "Transitioning your business to the cloud, unlocking scalability, efficiency, and enhanced collaboration across your organization.",
     cta: "Learn more",
+    ctaColor: {
+      base: "text-[#ab8447] font-semibold",
+      hover: "hover:!text-[#ab8447] font-semibold",
+    },
     Service: "Details",
     servicedesc:
       "Cloud services and migration refer to the process of adopting cloud computing solutions and transitioning IT systems, applications, and data from on-premises or legacy infrastructure to cloud-based environments. This transition offers several advantages, including scalability, flexibility, cost-efficiency, and improved accessibility to resources and services.",
@@ -190,13 +202,17 @@ export const services = [
     background: "/images/cloud-migration-services.png",
   },
   {
-    id: "Cybersecurity-Solutions",
+    id: "cybersecurity-solutions",
     title: "Cybersecurity Solutions",
     Icon: "/images/globe-lock.svg",
     className: "col-span-3 lg:col-span-1 bg-[#c6edd5]",
     description:
       "Safeguarding your invaluable digital assets and fortifying your online against the relentless and ever-evolving global landscape of cyber threats.",
     cta: "Learn more",
+    ctaColor: {
+      base: "text-[#3c8b5a] font-semibold",
+      hover: "hover:!text-[#3c8b5a] font-semibold",
+    },
     Service: "Service Description",
     servicedesc:
       "Cybersecurity solutions encompass a set of comprehensive strategies, tools, practices, and technologies designed to safeguard digital systems, networks, data, and information from unauthorized access, cyberattacks, and threats. These solutions are critical in today's interconnected and digitalized world, where organizations face an increasing number of cybersecurity risks. Cybersecurity solutions include measures such as firewalls, intrusion detection systems, encryption, authentication protocols, and security awareness training. Their primary goal is to protect sensitive data, preserve the confidentiality, integrity, and availability of digital assets, and ensure the continued operation of systems and services in the face of evolving cyber threats. Effective cybersecurity solutions are essential to maintaining trust, compliance, and resilience in the digital age.",
@@ -239,13 +255,17 @@ export const services = [
     background: "/images/Account-Security.png",
   },
   {
-    id: "Mobile-App-Development",
+    id: "mobile-app-development",
     title: "Mobile App Development",
     Icon: "/images/monitor-smartphone.svg",
-    className: "col-span-3 lg:col-span-1 bg-[#f0d7f9]",
+    className: "col-span-3 lg:col-span-1 bg-[#ecdef1]",
     description:
       "Creating captivating and user-friendly mobile applications that engage your audience and enhance your brand presence is a crucial aspect of business.",
     cta: "Learn more",
+    ctaColor: {
+      base: "text-[#7b3694] font-semibold",
+      hover: "hover:!text-[#7b3694] font-semibold",
+    },
     Service: "Service Description",
     servicedesc:
       "Mobile development refers to the process of creating software applications specifically designed to run on mobile devices, such as smartphones and tablets. This field encompasses various platforms, including iOS (Apple), Android (Google), and others, and it plays a crucial role in shaping the way people interact with technology in our increasingly mobile-driven world. Mobile developers work on designing, coding, testing, and optimizing mobile apps to provide users with seamless and efficient digital experiences on their handheld devices.",
@@ -303,13 +323,17 @@ export const services = [
     background: "/images/mobile-application-development.png",
   },
   {
-    id: "Data-Analytics-and-Insights",
+    id: "data-analytics-and-insights",
     title: "Data Analytics and Insights",
     Icon: "/images/data-analyst.png",
-    className: "col-span-3 lg:col-span-2 bg-[#f1d1a2]",
+    className: "col-span-3 lg:col-span-2 bg-[#e9e0d1]",
     description:
       "Unlocking the power of data to make informed decisions, identify trends, and gain a competitive edge in your industry.",
     cta: "Learn more",
+    ctaColor: {
+      base: "text-[#96713c] font-semibold",
+      hover: "hover:!text-[#96713c] font-semibold",
+    },
     Service: "Service Description",
     servicedesc:
       "The primary goal of Data Analytics and Insights Services is to help organizations make data-driven decisions, solve complex problems, and gain a competitive edge in their respective industries. These services leverage data analytics tools, techniques, and expertise to extract valuable insights from large datasets. This is where Data Analytics and Insights Services come into play. These professional services are designed to unlock the latent potential of data, providing organizations with the capability to make informed decisions, optimize operations, enhance customer experiences, and gain a competitive edge.",
@@ -346,13 +370,17 @@ export const services = [
     background: "/images/mobile-application-development.png",
   },
   {
-    id: "Custom-Software-Development",
+    id: "custom-software-development",
     title: "Custom Software Development",
     Icon: "/images/software-engineer.png",
-    className: "col-span-3 lg:col-span-2 bg-[#edc9c9]",
+    className: "col-span-3 lg:col-span-2 bg-[#d0baba]",
     description:
       "Tailor-made software solutions designed to align seamlessly with your unique business needs and drive productivity to new heights.",
     cta: "Learn more",
+    ctaColor: {
+      base: "text-[#933c3c] font-semibold",
+      hover: "hover:!text-[#933c3c] font-semibold",
+    },
     Service: "Service Description",
     servicedesc:
       "Custom software development is the process of creating tailored software applications or solutions designed to meet specific business needs, requirements, and objectives. Unlike off-the-shelf software, custom software is built from the ground up, considering unique workflows, processes, and goals of an organization. This approach ensures that the software aligns perfectly with the client's operations and can be optimized for efficiency, scalability, and user experience. Custom software can address a wide range of purposes, from automating internal processes to creating customer-facing applications, and it is characterized by its adaptability, scalability, and the ability to evolve as business needs change. This tailored approach empowers organizations to achieve a competitive edge, streamline operations, and innovate in response to evolving market demands.",
@@ -414,12 +442,16 @@ export const services = [
     background: "/images/mobile-application-development.png",
   },
   {
-    id: "Digital-Consulting",
+    id: "digital-consulting",
     title: "Digital Consulting",
     className: "col-span-3 lg:col-span-1 bg-[#bce0f1]",
     description:
       "Digital ConsultingUnleashing the full potential of your business through expert guidance and strategic implementation of cutting-edge technologies.",
     cta: "Learn more",
+    ctaColor: {
+      base: "text-[#3d748e] font-semibold",
+      hover: "hover:!text-[#3d748e] font-semibold",
+    },
     Service: "Service Description",
     servicedesc:
       "Digital Transformation Consulting is a strategic process that helps organizations harness the full potential of modern digital technologies to optimize operations, enhance customer experiences, and drive innovation. Through a comprehensive assessment of current systems, workflows, and objectives, digital transformation consultants identify opportunities for leveraging technology to achieve business goals. They then develop and implement tailored strategies that encompass technology adoption, process optimization, and cultural change. This holistic approach ensures that organizations can adapt to the evolving digital landscape, stay competitive, and meet the demands of a digitally savvy market. Digital transformation consulting empowers businesses to thrive in the digital age, facilitating growth, efficiency, and resilience.",
@@ -461,13 +493,17 @@ export const services = [
     ],
   },
   {
-    id: "Web-Development",
+    id: "web-development",
     title: "Web Development",
     Icon: "/images/world-wide-web.png",
     className: "col-span-3 lg:col-span-1 bg-[#e4e7ff]",
     description:
       "Focus on safeguarding digital assets, sensitive information, and user accounts from unauthorized access and cyber threats.",
     cta: "Learn more",
+    ctaColor: {
+      base: "text-[#3844ad] font-semibold",
+      hover: "hover:!text-[#3844ad] font-semibold",
+    },
     Service: "Service Description",
     servicedesc:
       "Web Development is the process of creating and building websites or web applications that are accessible via the internet. It involves a range of tasks, including designing the user interface, developing the back-end functionality, and ensuring that the website or web app is responsive and user-friendly. Web development encompasses both the visual aspects of a website and its underlying technical infrastructure.",
@@ -524,13 +560,17 @@ export const services = [
     background: "/images/mobile-application-development.png",
   },
   {
-    id: "Website-Maintenance",
+    id: "website-maintenance",
     title: "Website Maintenance",
     Icon: "/images/maintenance.svg",
     className: "col-span-3 lg:col-span-2 bg-[#faf1e3]",
     description:
       "Involves the ongoing management and updates required to keep a website functioning smoothly.",
     cta: "Learn more",
+    ctaColor: {
+      base: "text-[#ab8447] font-semibold",
+      hover: "hover:!text-[#ab8447] font-semibold",
+    },
     Service: "Service Description",
     servicedesc:
       "In the fast-paced digital landscape of today, where websites serve as the face of businesses and organizations, maintaining a robust and up-to-date online presence is crucial. Website Maintenance Services have emerged as a cornerstone of sustainable digital success. This article delves into the significance of these services and how they play a pivotal role in ensuring your online presence remains optimal.",
@@ -573,13 +613,17 @@ export const services = [
     background: "/images/web-maintenance.png",
   },
   {
-    id: "IT-Consultancy",
+    id: "it-consultancy",
     title: "IT Consultancy",
     Icon: "/images/erp.png",
     className: "col-span-3 lg:col-span-2 bg-[#c6edd5]",
     description:
       "Provide expert guidance and strategic advice to organizations seeking to optimize their technology infrastructure.",
     cta: "Learn more",
+    ctaColor: {
+      base: "text-[#3c8b5a] font-semibold",
+      hover: "hover:!text-[#3c8b5a] font-semibold",
+    },
     Service: "Service Description",
     servicedesc:
       "IT Consultancy is a professional service offering expert guidance and strategic advice on various aspects of information technology (IT) to help organizations make informed decisions and optimize their technology infrastructure. IT consultants are experienced professionals who assess your current IT environment, understand your business objectives, and provide tailored recommendations to enhance your IT strategy and operations.",
@@ -625,13 +669,17 @@ export const services = [
     background: "/images/mobile-application-development.png",
   },
   {
-    id: "QA-Testing",
+    id: "qa-testing",
     title: "Q&A Testing",
     Icon: "/images/check.png",
-    className: "col-span-3 lg:col-span-1 bg-[#f0d7f9]",
+    className: "col-span-3 lg:col-span-1 bg-[#ecdef1]",
     description:
       "Involves a systematic process of evaluating software applications or systems to identify and fix issues.",
     cta: "Learn more",
+    ctaColor: {
+      base: "text-[#7b3694] font-semibold",
+      hover: "hover:!text-[#7b3694] font-semibold",
+    },
     Service: "Service Description",
     servicedesc:
       "Quality Assurance (QA) Testing is a critical phase in the software development lifecycle aimed at ensuring that software applications, websites, or digital products meet high-quality standards and perform as intended. This service involves systematically testing and validating various aspects of the software to identify defects, inconsistencies, and areas for improvement before the product is released to end-users. QA Testing is an essential service that contributes to the overall quality, reliability, and success of software applications and digital products. By thoroughly evaluating and fine-tuning the software, organizations can provide users with a superior and error-free experience while minimizing risks and costs associated with defects and failures.",
@@ -688,13 +736,17 @@ export const services = [
     background: "/images/mobile-application-development.png",
   },
   {
-    id: "Account-Security",
+    id: "account-security",
     title: "Account & Security",
     Icon: "/images/privacy-policy.png",
     className: "col-span-3 lg:col-span-3 bg-[#e4f1ff]",
     description:
       "Focus on safeguarding digital assets, sensitive information, and user accounts from unauthorized access and cyber threats.",
     cta: "Learn more",
+    ctaColor: {
+      base: "text-[#0071eb] font-semibold",
+      hover: "hover:text-[#0071eb] font-semibold",
+    },
     Service: "Service Description",
     servicedesc:
       "Cloud services prioritize account security by implementing multi-layered authentication, encryption, and access controls. This ensures that only authorized individuals or systems can access sensitive data and applications. Account security measures include password policies, multi-factor authentication (MFA), role-based access control (RBAC), and activity monitoring. These security mechanisms help protect against unauthorized access, data breaches, and cyber threats, ultimately enhancing the overall security posture of an organization's cloud-based resources. Compliance with industry standards and regulations further reinforces account security, instilling confidence in clients and users that their data and accounts are safeguarded against potential risks and vulnerabilities.",

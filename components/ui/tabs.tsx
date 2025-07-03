@@ -5,6 +5,7 @@ import { motion } from "motion/react";
 import { cn } from "@/lib/utils";
 
 type Tab = {
+  bg: string;
   title: string;
   value: string;
   content?: string | React.ReactNode;
@@ -53,6 +54,7 @@ export const Tabs = ({
             onMouseLeave={() => setHovering(false)}
             className={cn(
               "relative rounded-full px-3 py-1.5 sm:px-4 sm:py-2 md:px-5 md:py-3.5 text-sm sm:text-base md:text-lg whitespace-nowrap",
+              tab.bg,
               tabClassName
             )}
             style={{ transformStyle: "preserve-3d" }}
@@ -62,7 +64,7 @@ export const Tabs = ({
                 layoutId="clickedbutton"
                 transition={{ type: "spring", bounce: 0.3, duration: 0.6 }}
                 className={cn(
-                  "absolute inset-0 bg-gray-200 rounded-full z-[-1]",
+                  "absolute inset-0 rounded-full z-[-1]",
                   activeTabClassName
                 )}
               />

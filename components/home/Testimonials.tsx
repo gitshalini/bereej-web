@@ -29,7 +29,7 @@ export default function Testimonials() {
           animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
           transition={{ duration: 0.6, delay: 0.2 }}
         >
-          We are more than just a business; we are a community driven by our
+          We are more than just a business we are a community driven by our
           passion for serving our customers with excellence. Our success is
           intertwined with the success of each individual and company we proudly
           call our customers
