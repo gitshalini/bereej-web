@@ -1,5 +1,5 @@
 "use client";
-import React, { useEffect, useRef, useState } from "react";
+import React, { useRef } from "react";
 import {
   motion,
   useScroll,
@@ -19,32 +19,32 @@ export const MacbookScroll = ({
   const ref = useRef<HTMLDivElement>(null);
   const { scrollYProgress } = useScroll({
     target: ref,
-    offset: ["start start", "end start"],
+    offset: ["start end", "end start"],
   });
 
-  const [isMobile, setIsMobile] = useState(false);
+  // const [isMobile, setIsMobile] = useState(false);
 
-  useEffect(() => {
-    if (window && window.innerWidth < 768) {
-      setIsMobile(true);
-    }
-  }, []);
+  // useEffect(() => {
+  //   if (typeof window !== "undefined" && window.innerWidth < 768) {
+  //     setIsMobile(true);
+  //   }
+  // }, []);
 
-  const scaleX = useTransform(
-    scrollYProgress,
-    [1, 0.3],
-    [1.2, isMobile ? 1 : 1.2]
-  );
-  const scaleY = useTransform(
-    scrollYProgress,
-    [1, 0.3],
-    [0.6, isMobile ? 1 : 1.2]
-  );
-  const translate = useTransform(scrollYProgress, [0, 1], [0, 300]);
+  // const scaleX = useTransform(
+  //   scrollYProgress,
+  //   [1, 0.3],
+  //   [1, isMobile ? 1 : 1.2]
+  // );
+  // const scaleY = useTransform(
+  //   scrollYProgress,
+  //   [1, 0.3],
+  //   [1, isMobile ? 1 : 1.2]
+  // );
+  const translate = useTransform(scrollYProgress, [0, 1], [50, 0]);
 
-  const rawRotate = useTransform(scrollYProgress, [0.02, 0.08], [25, 0]);
+  const rawRotate = useTransform(scrollYProgress, [0, 0.4], [25, 0]);
   const rotate = useSpring(rawRotate, {
-    damping: 60,
+    damping: 40,
     stiffness: 200,
   });
 
@@ -54,7 +54,7 @@ export const MacbookScroll = ({
   return (
     <div
       ref={ref}
-      className="flex min-h-[90vh] shrink-0 scale-[0.35] transform flex-col items-center justify-start py-0 [perspective:1000px] sm:scale-50 md:scale-100 md:py-0"
+      className="flex lg:min-h-[60vh] shrink-0 transform flex-col items-center justify-start [perspective:1000px] scale-90 sm:scale-95 md:scale-100"
     >
       <style>
         {`
@@ -114,48 +114,36 @@ export const MacbookScroll = ({
       {title && (
         <motion.h2
           style={{ translateY: textTransform, opacity: textOpacity }}
-          className="mb-20 text-center text-3xl font-bold text-neutral-800"
+          className="mb-10 text-center text-2xl sm:text-3xl font-bold text-neutral-800"
         >
           {title}
         </motion.h2>
       )}
 
-      <Lid
-        src={src}
-        scaleX={scaleX}
-        scaleY={scaleY}
-        rotate={rotate}
-        translate={translate}
-      />
+      <Lid src={src} rotate={rotate} translate={translate} />
     </div>
   );
 };
 
 export const Lid = ({
-  scaleX,
-  scaleY,
   rotate,
   translate,
   src,
 }: {
-  scaleX: MotionValue<number>;
-  scaleY: MotionValue<number>;
   rotate: MotionValue<number>;
   translate: MotionValue<number>;
   src?: string;
 }) => {
   return (
-    <div className="relative [perspective:1000px] h-auto">
+    <div className="relative [perspective:1000px] h-auto -top-5 w-full px-4">
       <motion.div
         style={{
-          scaleX,
-          scaleY,
           rotateX: rotate,
           translateY: translate,
           transformStyle: "preserve-3d",
           transformOrigin: "top",
         }}
-        className="w-[50rem] relative"
+        className="relative w-full max-w-[100vw] sm:max-w-[30rem] md:max-w-[40rem] lg:max-w-[50rem] mx-auto"
       >
         {/* Animated Gradient Border */}
         <div className="animated-border rounded-[20px] relative z-10">
@@ -163,13 +151,13 @@ export const Lid = ({
             <Image
               width={100}
               height={100}
-              sizes={"(max-width: 1439px) 100vw, 1440px"}
+              sizes="100vw"
               src={
                 src ||
                 "https://assets.aceternity.com/pro/aceternity-landing.webp"
               }
               alt="macbook"
-              className="h-full w-full object-cover object-center"
+              className="w-full h-auto object-cover object-center"
             />
           </div>
         </div>

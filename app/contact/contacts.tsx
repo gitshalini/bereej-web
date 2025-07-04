@@ -133,7 +133,7 @@ export default function ContactPage() {
         className="w-full object-cover object-center max-h-[40rem] h-auto rounded-xl"
       />
       <div className="mx-auto w-full flex flex-col max-w-7xl bg-white px-4 md:px-8 py-16">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 py-20">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 md:py-20">
           {/* Contact Information */}
           <div className="flex flex-col justify-center">
             <h2 className="text-2xl sm:text-3xl font-bold mb-6">
@@ -310,11 +310,11 @@ export default function ContactPage() {
                 </div>
 
                 <div className="w-full md:w-1/3 space-y-2">
-                  <div className="flex items-center text-gray-700">
+                  <div className="flex items-center text-gray-700 justify-center md:justify-start">
                     <Phone className="h-5 w-5 mr-2 flex-shrink-0" />
                     <span>{address.phone}</span>
                   </div>
-                  <div className="flex items-center text-gray-500">
+                  <div className="flex items-center text-gray-500 justify-center md:justify-start">
                     <Mail className="h-5 w-5 mr-2 flex-shrink-0" />
                     <span>{address.email}</span>
                   </div>

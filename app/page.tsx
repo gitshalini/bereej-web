@@ -8,7 +8,7 @@ import Card from "@/components/home/card";
 export default function Home() {
   return (
     <>
-      <div className="relative flex min-h-screen flex-col items-center justify-center overflow-hidden px-4 py-16 bg-white">
+      <div className="relative flex min-h-screen flex-col items-center justify-center overflow-hidden px-4 md:py-16 bg-white">
         <Hero />
       </div>
       <section className="mx-auto w-full flex flex-col max-w-7xl bg-white">

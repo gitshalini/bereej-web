@@ -65,7 +65,7 @@ export default function CaseStudiesPreview() {
   ];
 
   return (
-    <section ref={ref} className="w-full px-4 py-0 sm:py-16 lg:px-4">
+    <section ref={ref} className="w-full px-4 py-16">
       <div className="w-full flex flex-col items-center justify-center text-center px-4 mb-16">
         <motion.h2
           className="text-xl md:text-4xl font-bold tracking-tight text-neutral-800"

@@ -28,8 +28,8 @@ export default function Hero() {
   return (
     <>
       <BackgroundBeamsWithCollision>
-        <div className="absolute top-0 mx-auto flex max-w-7xl flex-col items-center justify-center h-full">
-          <div className="px-4 py-10 md:py-20">
+        <div className="mx-auto flex max-w-7xl flex-col items-center justify-center h-full">
+          <div className="px-4 pt-20 pb-10 md:py-20">
             <h1 className="relative z-10 mx-auto max-w-4xl text-center text-2xl font-bold text-black md:text-4xl lg:text-7xl -tracking-normal">
               {"Transforming ideas into inspiring experiences"
                 .split(" ")
@@ -93,7 +93,7 @@ export default function Hero() {
 
       {/* Logos Slider */}
       <section className="py-2 bg-white overflow-hidden">
-        <p className="relative z-10 mx-auto max-w-xl py-8 text-center text-lg mt-24 font-semibold text-neutral-600 uppercase">
+        <p className="relative z-10 mx-auto max-w-xl py-8 text-center text-lg lg:mt-20 font-semibold text-neutral-600 uppercase">
           Trusted by famous brands
         </p>
 

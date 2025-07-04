@@ -6,6 +6,7 @@ import { services } from "../services/services";
 import Link from "next/link";
 import ContactCard from "@/components/layout/contactCard";
 import { ShineBorder } from "@/components/magicui/shine-border";
+import { cn } from "@/lib/utils";
 
 const teamMembers = [
   {
@@ -143,36 +144,48 @@ export default function AboutPage() {
           ))}
         </ul>
         <div className="flex flex-col py-16" id="Leader">
-          <h3 className="text-2xl text-neutral-800 font-medium uppercase text-center w-full mb-4">
+          <h3 className="text-xl md:text-2xl text-neutral-800 font-medium uppercase text-center mb-2">
             LEADERSHIP TEAM
           </h3>
-          <h2 className="text-6xl text-neutral-800 font-bold mb-8 text-center w-full">
+          <h2 className="text-4xl md:text-6xl text-neutral-800 font-bold mb-10 text-center">
             Meet our People.
           </h2>
-          <section className="w-full pt-16">
-            <div className="grid gap-4 grid-cols-4 auto-cols-fr grid-rows-[auto] mb-4 pt-[26px]">
+
+          <section className="w-full pt-10">
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
               {teamMembers.map((member, index) => (
-                <Link key={index} href={member.linkedin} target="_blank">
+                <Link
+                  key={index}
+                  href={member.linkedin}
+                  target="_blank"
+                  className="flex flex-col items-center text-center"
+                >
                   <div
-                    className={`${member.bgColor} rounded-xl aspect-[308/295] mb-6 relative overflow-visible`}
+                    className={cn(
+                      member.bgColor,
+                      "relative w-full max-w-[280px] aspect-[308/295] rounded-xl overflow-hidden mb-4"
+                    )}
                   >
                     <Image
                       src={member.image}
                       alt={member.name}
                       fill
-                      sizes="300px"
+                      sizes="(max-width: 768px) 80vw, 300px"
                       className="object-contain"
                     />
                   </div>
-                  <h3 className="text-lg md:text-2xl font-semibold">
+                  <h3 className="text-lg md:text-xl font-semibold text-neutral-800">
                     {member.name}
                   </h3>
-                  <p className="text-gray-600 text-lg">{member.role}</p>
+                  <p className="text-gray-600 text-base md:text-lg">
+                    {member.role}
+                  </p>
                 </Link>
               ))}
             </div>
           </section>
         </div>
+
         <section className="w-full flex flex-col py-16">
           <div className="w-full flex bg-gray-200 rounded-xl p-6">
             <div className="w-1/2 flex flex-col justify-around px-6">

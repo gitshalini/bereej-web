@@ -102,26 +102,29 @@ export default function ValuesPage() {
         />
       </div>
 
-      <div className="mx-auto w-full flex flex-col max-w-7xl bg-white py-16">
+      <div className="mx-auto w-full flex flex-col max-w-7xl bg-white py-16 px-4 sm:px-6 lg:px-8">
         <section className="w-full flex flex-col">
-          <div className="w-full flex mb-16">
-            <div className="w-1/2 flex flex-col justify-between px-6 py-20">
-              <div className="w-full flex flex-col gap-8">
-                <p className="text-xl uppercase font-normal text-neutral-600">
+          <div className="w-full flex flex-col lg:flex-row mb-16  md:gap-12 lg:gap-0">
+            {/* Text Section */}
+            <div className="w-full lg:w-1/2 flex flex-col justify-between px-0 lg:px-6 py-10 lg:py-20 gap-8">
+              <div className="flex flex-col gap-6">
+                <p className="text-base sm:text-lg md:text-xl uppercase font-normal text-neutral-600">
                   Our Offices
                 </p>
-                <h2 className="w-full text-5xl text-neutral-800 font-semibold">
+                <h2 className="text-3xl sm:text-4xl lg:text-5xl text-neutral-800 font-semibold leading-tight">
                   Connecting Innovation
                   <br />
                   <span>Worldwide</span>.
                 </h2>
               </div>
-              <p className="text-xl text-neutral-600 font-normal">
+              <p className="text-base sm:text-lg md:text-xl text-neutral-600 font-normal">
                 Our offices in the India, and Malaysia.
               </p>
             </div>
-            <div className="w-1/2">
-              <div className="relative overflow-hidden w-full h-full py-20">
+
+            {/* Carousel Section */}
+            <div className="w-full lg:w-1/2 overflow-hidden">
+              <div className="relative w-full h-full py-10 lg:py-20">
                 <Carousel slides={slideData} />
               </div>
             </div>

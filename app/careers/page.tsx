@@ -14,34 +14,38 @@ export default function Career() {
 
   return (
     <section className="max-w-7xl mx-auto px-4 py-16">
-      <div className="w-full flex flex-col md:flex-row gap-4 py-16">
-        <div className="w-1/3 flex flex-col justify-center p-6">
+      <div className="w-full flex flex-col md:flex-row gap-8 py-16 px-4 sm:px-6 lg:px-8">
+        {/* Left text and button section */}
+        <div className="w-full md:w-1/3 flex flex-col justify-center p-4 md:p-6">
           <div className="mb-6">
-            <p className="text-6xl text-neutral-800 font-semibold">
+            <p className="text-4xl sm:text-5xl md:text-6xl text-neutral-800 font-semibold leading-tight">
               Your Skills.
             </p>
-            <p className="text-6xl text-neutral-400 font-semibold">
+            <p className="text-4xl sm:text-5xl md:text-6xl text-neutral-400 font-semibold leading-tight">
               Our Stage.
             </p>
           </div>
-          <p className="text-xl text-neutral-800 font-normal mb-12">
+          <p className="text-lg sm:text-xl text-neutral-800 font-normal mb-8 md:mb-12">
             Join the Bereej team today!
           </p>
           <button
             onClick={scrollToOpenings}
-            className="w-45 h-auto transform rounded-lg bg-blue-800 px-6 py-2 font-medium text-white transition-all duration-300 hover:-translate-y-0.5 hover:bg-blue-600 cursor-pointer"
+            className="w-full md:w-auto h-auto rounded-lg bg-blue-800 px-6 py-3 font-medium text-white transition-all duration-300 hover:-translate-y-0.5 hover:bg-blue-600 cursor-pointer"
           >
             Explore Careers
           </button>
         </div>
-        <div className="w-2/3">
+
+        {/* Right image section */}
+        <div className="w-full md:w-2/3">
           <Image
             src="/images/career.avif"
-            width={100}
-            height={100}
+            width={1000}
+            height={600}
             sizes="(max-width: 479px) 95vw, (max-width: 767px) 97vw, (max-width: 991px) 60vw, (max-width: 1439px) 64vw, 842.671875px"
             alt="career image"
-            className="w-full object-cover rounded-xl"
+            className="w-full h-auto object-cover rounded-xl"
+            priority
           />
         </div>
       </div>
