@@ -186,28 +186,31 @@ export default function AboutPage() {
           </section>
         </div>
 
-        <section className="w-full flex flex-col py-16">
-          <div className="w-full flex bg-gray-200 rounded-xl p-6">
-            <div className="w-1/2 flex flex-col justify-around px-6">
-              <h2 className="w-full text-5xl text-neutral-800 font-semibold">
+        <section className="w-full flex flex-col py-16 px-4 sm:px-8">
+          <div className="w-full flex flex-col md:flex-row bg-gray-200 rounded-xl p-6 md:p-10 gap-6 md:gap-0">
+            {/* Text Section */}
+            <div className="w-full md:w-1/2 flex flex-col justify-center gap-6 px-2 md:px-6">
+              <h2 className="text-3xl sm:text-4xl md:text-5xl text-neutral-800 font-semibold leading-tight">
                 Help us
                 <br />
                 <span className="text-indigo-800">make a difference</span>.
               </h2>
               <Link
                 href="/careers"
-                className="w-45 h-auto transform rounded-lg bg-blue-800 px-6 py-2 font-medium text-white transition-all duration-300 hover:-translate-y-0.5 hover:bg-blue-600"
+                className="inline-block w-fit transform rounded-lg bg-blue-800 px-6 py-3 font-medium text-white transition-all duration-300 hover:-translate-y-0.5 hover:bg-blue-600"
               >
                 Explore Careers
               </Link>
             </div>
-            <div className="w-1/2">
+
+            {/* Image Section */}
+            <div className="w-full md:w-1/2">
               <Image
-                width={100}
-                height={100}
+                width={1000}
+                height={1000}
                 src="https://cdn.prod.website-files.com/6703ab04ad9a0080c460594f/67405c35db4f75e91933225d_pablo-merchan-montes-D_1s1abegJc-unsplash%201.avif"
-                alt=""
-                className="w-full object-cover rounded-xl"
+                alt="Team working together"
+                className="w-full h-full object-cover rounded-xl"
               />
             </div>
           </div>
